@@ -18,10 +18,16 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v2
 
+      - name: Install git
+        run: apk add git curl
+
+      - name: Install PNPM
+        run: curl -fsSL https://get.pnpm.io/install.sh | sh -
+
       # Performs a clean installation of all dependencies
       # in the `package.json` file
       - name: Install dependencies
-        run: yarn
+        run: pnpm i
 
       - name: Type Check
         run: yarn typecheck

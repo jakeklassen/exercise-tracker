@@ -1,0 +1,33 @@
+name: Node.js CI
+
+on: [push]
+
+jobs:
+  container-job:
+    runs-on: ubuntu-20.04
+    container: mhart/alpine-node:16
+
+    services:
+      mongo:
+        image: mongo
+        env:
+          MONGO_INITDB_ROOT_USERNAME: tantor
+          MONGO_INITDB_ROOT_PASSWORD: elephant
+
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+
+      # Performs a clean installation of all dependencies
+      # in the `package.json` file
+      - name: Install dependencies
+        run: yarn
+
+      - name: Type Check
+        run: yarn typecheck
+
+      - name: Test
+        run: yarn test
+        env:
+          MONGO_URL: mongodb://tantor:elephant@mongo:27017/tantor-test?authSource=admin
+          MONGO_DB: tantor-test

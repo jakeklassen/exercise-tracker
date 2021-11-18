@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  mongo:
+    image: mongo:5.0.3
+    # command: --smallfiles
+    ports:
+      - '59312:27017'
+    volumes:
+      - exercise-tracker-tantor-data:/data/db
+    # # if you want to debug to volume enable to bottom two settings
+    # # and run `docker-compose exec mongo sh`
+    # stdin_open: true
+    # tty: true
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: tantor
+      MONGO_INITDB_ROOT_PASSWORD: elephant
+
+volumes:
+  exercise-tracker-tantor-data:

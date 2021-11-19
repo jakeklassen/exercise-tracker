@@ -9,6 +9,7 @@ declare module '#app/container.js' {
 
 export const resolveDatabaseConnection = async ({ config }: AppCradle) => {
   await mongoose.connect(config.get('mongoUrl'), {
+    autoIndex: false,
     dbName: config.get('mongoDb'),
     authSource: 'admin',
   });

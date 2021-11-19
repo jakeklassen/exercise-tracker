@@ -1,21 +1,15 @@
 import { build } from '#app/app.js';
 import { initializeContainer } from '#app/container.js';
+import faker from 'faker';
 import { StatusCodes } from 'http-status-codes';
 import { suite } from 'uvu';
 import * as assert from 'uvu/assert';
-import faker from 'faker';
 
 const testContainer = await initializeContainer();
 
 // REGISTER mocks
 // testContainer.register({
-//   ShortUrlModel: asValue(
-//     Promise.resolve({
-//       async insertOne() {
-//         return {};
-//       },
-//     } as unknown as ShortUrl),
-//   ),
+//   UserModel: asValue(Promise.resolve(mockUserModel)),
 // });
 
 const userSuite = suite('/api/users');

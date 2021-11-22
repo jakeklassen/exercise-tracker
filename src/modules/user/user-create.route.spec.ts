@@ -2,8 +2,7 @@ import { build } from '#app/app.js';
 import { initializeContainer } from '#app/container.js';
 import faker from 'faker';
 import { StatusCodes } from 'http-status-codes';
-import { suite } from 'uvu';
-import * as assert from 'uvu/assert';
+import expect from 'expect';
 
 const testContainer = await initializeContainer();
 
@@ -11,8 +10,6 @@ const testContainer = await initializeContainer();
 // testContainer.register({
 //   UserModel: asValue(Promise.resolve(mockUserModel)),
 // });
-
-const userSuite = suite('POST /api/users');
 
 const { app, container } = build({
   container: testContainer,
@@ -23,70 +20,70 @@ const { app, container } = build({
 
 const UserModel = await container.cradle.UserModel;
 
-userSuite.before(async () => {
-  await container.cradle.mongoose;
-});
-
-userSuite.before.each(async () => {
-  await UserModel.deleteMany({});
-});
-
-userSuite('should return Bad Request', async () => {
-  const response = await app.inject({
-    method: 'POST',
-    url: '/api/users',
+describe('POST /api/users', () => {
+  before(async () => {
+    await container.cradle.mongoose;
   });
 
-  assert.is(response.statusCode, StatusCodes.BAD_REQUEST);
-});
-
-userSuite('should return a valid response', async () => {
-  const response = await app.inject({
-    method: 'POST',
-    url: '/api/users',
-    payload: {
-      username: faker.internet.userName(),
-    },
+  beforeEach(async () => {
+    await UserModel.deleteMany({});
   });
 
-  assert.is(response.statusCode, StatusCodes.OK);
+  it('should return Bad Request', async () => {
+    const response = await app.inject({
+      method: 'POST',
+      url: '/api/users',
+    });
 
-  const count = await UserModel.countDocuments();
-
-  assert.is(count, 1);
-});
-
-userSuite('should error on duplciate username', async () => {
-  const username = faker.internet.userName();
-
-  await app.inject({
-    method: 'POST',
-    url: '/api/users',
-    payload: {
-      username,
-    },
+    expect(response.statusCode).toBe(StatusCodes.BAD_REQUEST);
   });
 
-  const response = await app.inject({
-    method: 'POST',
-    url: '/api/users',
-    payload: {
-      username,
-    },
+  it('should return a valid response', async () => {
+    const response = await app.inject({
+      method: 'POST',
+      url: '/api/users',
+      payload: {
+        username: faker.internet.userName(),
+      },
+    });
+
+    expect(response.statusCode).toBe(StatusCodes.OK);
+
+    const count = await UserModel.countDocuments();
+
+    expect(count).toBe(1);
   });
 
-  assert.is(response.statusCode, StatusCodes.BAD_REQUEST);
+  it('should error on duplciate username', async () => {
+    const username = faker.internet.userName();
 
-  const count = await UserModel.countDocuments();
+    await app.inject({
+      method: 'POST',
+      url: '/api/users',
+      payload: {
+        username,
+      },
+    });
 
-  assert.is(count, 1);
+    const response = await app.inject({
+      method: 'POST',
+      url: '/api/users',
+      payload: {
+        username,
+      },
+    });
+
+    expect(response.statusCode).toBe(StatusCodes.BAD_REQUEST);
+
+    const count = await UserModel.countDocuments();
+
+    expect(count).toBe(1);
+  });
+
+  after(async () => {
+    const mongoose = await container.cradle.mongoose;
+    await mongoose.connection.dropDatabase();
+
+    await container.dispose();
+  });
 });
-
-userSuite.after(async () => {
-  const mongoose = await container.cradle.mongoose;
-  await mongoose.connection.dropDatabase();
-
-  await container.dispose();
-});
-
-userSuite.run();

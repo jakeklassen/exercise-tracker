@@ -4,7 +4,9 @@ import { initializeContainer } from '#app/container.js';
 const { app, container } = build({
   container: await initializeContainer(),
   fastifyServerOptions: {
-    logger: true,
+    logger: {
+      prettyPrint: true,
+    },
   },
 });
 

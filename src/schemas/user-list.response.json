@@ -1,0 +1,15 @@
+{
+  "title": "Get Api Users Response",
+  "description": "GET /api/users",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "_id": { "type": "string" },
+      "username": { "type": "string" },
+      "createdAt": { "type": "string" },
+      "updatedAt": { "type": "string" }
+    },
+    "required": ["_id", "username"]
+  }
+}

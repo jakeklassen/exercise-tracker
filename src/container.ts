@@ -34,7 +34,7 @@ export const initializeContainer = async () => {
       ],
       // TODO Check what the default `Lifetime` is
       '**/*.model.js',
-      '**/*.router.js',
+      '**/*.route.js',
     ],
     {
       esModules: true,

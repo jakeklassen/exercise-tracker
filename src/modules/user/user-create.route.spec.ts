@@ -12,7 +12,7 @@ const testContainer = await initializeContainer();
 //   UserModel: asValue(Promise.resolve(mockUserModel)),
 // });
 
-const userSuite = suite('/api/users');
+const userSuite = suite('POST /api/users');
 
 const { app, container } = build({
   container: testContainer,
@@ -22,6 +22,10 @@ const { app, container } = build({
 });
 
 const UserModel = await container.cradle.UserModel;
+
+userSuite.before(async () => {
+  await container.cradle.mongoose;
+});
 
 userSuite.before.each(async () => {
   await UserModel.deleteMany({});
@@ -47,7 +51,7 @@ userSuite('should return a valid response', async () => {
 
   assert.is(response.statusCode, StatusCodes.OK);
 
-  const count = await UserModel.countDocuments({});
+  const count = await UserModel.countDocuments();
 
   assert.is(count, 1);
 });
@@ -73,7 +77,7 @@ userSuite('should error on duplciate username', async () => {
 
   assert.is(response.statusCode, StatusCodes.BAD_REQUEST);
 
-  const count = await UserModel.countDocuments({});
+  const count = await UserModel.countDocuments();
 
   assert.is(count, 1);
 });

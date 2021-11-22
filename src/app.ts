@@ -31,7 +31,8 @@ export const build = (opts: BuildOptions) => {
     done();
   });
 
-  app.route(container.cradle.userRouter);
+  app.route(container.cradle.userListRoute);
+  app.route(container.cradle.userCreateRoute);
 
   return { app, container };
 };

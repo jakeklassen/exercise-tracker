@@ -4,7 +4,7 @@ import { IncomingMessage, Server, ServerResponse } from 'http';
 
 declare module '#app/container.js' {
   interface AppCradle {
-    userRouter: CreateUserRoute;
+    userCreateRoute: CreateUserRoute;
   }
 }
 
@@ -20,7 +20,7 @@ type CreateUserRoute = RouteOptions<
   FastifySchema
 >;
 
-export const resolveUserRouter = ({ UserModel }: AppCradle) =>
+export const resolveUserCreateRoute = ({ UserModel }: AppCradle) =>
   ({
     method: 'POST',
     url: '/api/users',
@@ -41,4 +41,4 @@ export const resolveUserRouter = ({ UserModel }: AppCradle) =>
     },
   } as CreateUserRoute);
 
-export default resolveUserRouter;
+export default resolveUserCreateRoute;

@@ -1,5 +1,5 @@
 import { AppCradle } from '#app/container.js';
-import mongoose from 'mongoose';
+import mongoose, { Document } from 'mongoose';
 
 declare module '#app/container.js' {
   interface AppCradle {
@@ -7,8 +7,37 @@ declare module '#app/container.js' {
   }
 }
 
+interface Exercise {
+  description: string;
+  duration: number;
+  date: string;
+}
+
+const exerciseSchema = new mongoose.Schema<Exercise>(
+  {
+    description: {
+      type: String,
+      required: true,
+    },
+    duration: {
+      type: Number,
+      min: 1,
+      required: true,
+    },
+    date: {
+      type: String,
+      default: () => new Date().toDateString(),
+    },
+  },
+  {
+    _id: false,
+  },
+);
+
 export interface User {
+  _id: any;
   username: string;
+  log: Document<Exercise>[];
 }
 
 const userSchema = new mongoose.Schema<User>(
@@ -18,6 +47,7 @@ const userSchema = new mongoose.Schema<User>(
       required: true,
       unique: true,
     },
+    log: [exerciseSchema],
   },
   {
     timestamps: true,

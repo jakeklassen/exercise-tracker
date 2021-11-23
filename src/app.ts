@@ -33,6 +33,7 @@ export const build = (opts: BuildOptions) => {
 
   app.route(container.cradle.userListRoute);
   app.route(container.cradle.userCreateRoute);
+  app.route(container.cradle.userExerciseCreateRoute);
 
   return { app, container };
 };

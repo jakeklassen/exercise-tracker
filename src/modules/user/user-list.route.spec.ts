@@ -54,9 +54,6 @@ describe('GET /api/users', () => {
   });
 
   after(async () => {
-    const mongoose = await container.cradle.mongoose;
-    await mongoose.connection.dropDatabase();
-
     await container.dispose();
   });
 });

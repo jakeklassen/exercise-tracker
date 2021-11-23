@@ -1,4 +1,5 @@
 import { AppCradle } from '#app/container.js';
+import { USER_ROUTE } from '#app/modules/user/route.js';
 import { FastifySchema, RouteOptions } from 'fastify';
 import { IncomingMessage, Server, ServerResponse } from 'http';
 
@@ -23,7 +24,7 @@ type CreateUserRoute = RouteOptions<
 export const resolveUserCreateRoute = ({ UserModel }: AppCradle) =>
   ({
     method: 'POST',
-    url: '/api/users',
+    url: USER_ROUTE,
     schema: {
       body: {
         username: {

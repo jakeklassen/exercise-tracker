@@ -1,4 +1,5 @@
 import { AppCradle } from '#app/container.js';
+import { USER_ROUTE } from '#app/modules/user/route.js';
 import { FastifySchema, RouteOptions } from 'fastify';
 import { RouteGenericInterface } from 'fastify/types/route';
 import { IncomingMessage, Server, ServerResponse } from 'http';
@@ -22,7 +23,7 @@ type ListUserRoute = RouteOptions<
 export const resolveUserListRoute = ({ UserModel }: AppCradle) =>
   ({
     method: 'GET',
-    url: '/api/users',
+    url: USER_ROUTE,
     schema: {
       response: {
         [StatusCodes.OK]: {

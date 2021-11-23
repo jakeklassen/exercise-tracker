@@ -4,7 +4,7 @@ import { FastifySchema, RouteOptions } from 'fastify';
 import { IncomingMessage, Server, ServerResponse } from 'http';
 import { StatusCodes } from 'http-status-codes';
 
-export const ROUTE = '/api/users/:id/exercises';
+export const USER_EXERCISE_CREATE_ROUTE = '/api/users/:id/exercises';
 
 declare module '#app/container.js' {
   interface AppCradle {
@@ -32,8 +32,11 @@ type CreateUserExerciseRoute = RouteOptions<
 export const resolveUserExerciseCreateRoute = ({ UserModel }: AppCradle) =>
   ({
     method: 'POST',
-    url: ROUTE,
+    url: USER_EXERCISE_CREATE_ROUTE,
     schema: {
+      params: {
+        id: { type: ['string'] },
+      },
       body: {
         description: {
           type: ['string'],

@@ -1,8 +1,9 @@
 import { build } from '#app/app.js';
 import { initializeContainer } from '#app/container.js';
+import { USER_ROUTE } from '#app/modules/user/route.js';
+import expect from 'expect';
 import faker from 'faker';
 import { StatusCodes } from 'http-status-codes';
-import expect from 'expect';
 
 const testContainer = await initializeContainer();
 
@@ -20,7 +21,7 @@ const { app, container } = build({
 
 const UserModel = await container.cradle.UserModel;
 
-describe('POST /api/users', () => {
+describe(`POST ${USER_ROUTE}`, () => {
   before(async () => {
     await container.cradle.mongoose;
   });
@@ -32,7 +33,7 @@ describe('POST /api/users', () => {
   it('should return Bad Request', async () => {
     const response = await app.inject({
       method: 'POST',
-      url: '/api/users',
+      url: USER_ROUTE,
     });
 
     expect(response.statusCode).toBe(StatusCodes.BAD_REQUEST);
@@ -41,7 +42,7 @@ describe('POST /api/users', () => {
   it('should return a valid response', async () => {
     const response = await app.inject({
       method: 'POST',
-      url: '/api/users',
+      url: USER_ROUTE,
       payload: {
         username: faker.internet.userName(),
       },
@@ -59,7 +60,7 @@ describe('POST /api/users', () => {
 
     await app.inject({
       method: 'POST',
-      url: '/api/users',
+      url: USER_ROUTE,
       payload: {
         username,
       },
@@ -67,7 +68,7 @@ describe('POST /api/users', () => {
 
     const response = await app.inject({
       method: 'POST',
-      url: '/api/users',
+      url: USER_ROUTE,
       payload: {
         username,
       },

@@ -1,6 +1,8 @@
 import { build } from '#app/app.js';
 import { initializeContainer } from '#app/container.js';
-import { ROUTE } from '#app/modules/user-exercise/user-exercise-create.route.js';
+import { USER_EXERCISE_CREATE_ROUTE } from '#app/modules/user-exercise/user-exercise.create.route.js';
+import { USER_LOG_LIST_ROUTE } from '#app/modules/user-log/user-log.list.route.js';
+import { USER_ROUTE } from '#app/modules/user/route.js';
 import { User } from '#app/modules/user/user.model.js';
 import expect from 'expect';
 import faker from 'faker';
@@ -23,7 +25,7 @@ const { app, container } = build({
 
 const UserModel = await container.cradle.UserModel;
 
-describe(`POST ${ROUTE}`, () => {
+describe(`GET ${USER_LOG_LIST_ROUTE}`, () => {
   let user: User;
 
   before(async () => {
@@ -33,10 +35,10 @@ describe(`POST ${ROUTE}`, () => {
   beforeEach(async () => {
     await UserModel.deleteMany({});
 
-    user = await await app
+    user = await app
       .inject({
         method: 'POST',
-        url: '/api/users',
+        url: USER_ROUTE,
         payload: {
           username: faker.internet.userName(),
         },
@@ -46,59 +48,35 @@ describe(`POST ${ROUTE}`, () => {
 
   it('should return Not Found response', async () => {
     const userId = new ObjectId().toString();
-    const url = ROUTE.replace(':id', userId);
+    const url = USER_LOG_LIST_ROUTE.replace(':id', userId);
 
     const response = await app.inject({
-      method: 'POST',
+      method: 'GET',
       url,
-      payload: {
-        description: 'run',
-        duration: 22,
-      },
     });
 
     expect(response.statusCode).toBe(StatusCodes.NOT_FOUND);
   });
 
-  it('should return Bad Request response', async () => {
-    const userId = new ObjectId().toString();
-    const url = ROUTE.replace(':id', userId);
+  it('should have 0 exercises', async () => {
+    const url = USER_LOG_LIST_ROUTE.replace(':id', user._id);
 
     const response = await app.inject({
-      method: 'POST',
+      method: 'GET',
       url,
     });
 
-    expect(response.statusCode).toBe(StatusCodes.BAD_REQUEST);
-  });
-
-  it('should return a valid response', async () => {
-    const url = ROUTE.replace(':id', user._id);
-
-    const description = 'run';
-    const duration = 22;
-
-    const response = await app.inject({
-      method: 'POST',
-      url,
-      payload: {
-        description,
-        duration,
-      },
-    });
-
-    const exercise = response.json();
+    const log = response.json();
 
     expect(response.statusCode).toBe(StatusCodes.OK);
-    expect(exercise._id).toBe(user._id);
-    expect(exercise.username).toBe(user.username);
-    expect(exercise.description).toBe(description);
-    expect(exercise.duration).toBe(duration);
-    expect(exercise.date).toBe(new Date().toDateString());
+    expect(log._id).toBe(user._id);
+    expect(log.username).toBe(user.username);
+    expect(log.count).toBe(0);
+    expect(log.log.length).toBe(0);
   });
 
-  it('should accept user provided `date` value', async () => {
-    const url = ROUTE.replace(':id', user._id);
+  it('should have 1 exercise', async () => {
+    const url = USER_LOG_LIST_ROUTE.replace(':id', user._id);
 
     const payload = {
       description: 'run',
@@ -106,20 +84,24 @@ describe(`POST ${ROUTE}`, () => {
       date: new Date(2021, 11, 20).toDateString(),
     };
 
-    const response = await app.inject({
+    await app.inject({
       method: 'POST',
-      url,
+      url: USER_EXERCISE_CREATE_ROUTE.replace(':id', user._id),
       payload,
     });
 
-    const exercise = response.json();
+    const response = await app.inject({
+      method: 'GET',
+      url,
+    });
+
+    const log = response.json();
 
     expect(response.statusCode).toBe(StatusCodes.OK);
-    expect(exercise._id).toBe(user._id);
-    expect(exercise.username).toBe(user.username);
-    expect(exercise.description).toBe(payload.description);
-    expect(exercise.duration).toBe(payload.duration);
-    expect(exercise.date).toBe(payload.date);
+    expect(log._id).toBe(user._id);
+    expect(log.username).toBe(user.username);
+    expect(log.count).toBe(1);
+    expect(log.log.length).toBe(1);
   });
 
   after(async () => {

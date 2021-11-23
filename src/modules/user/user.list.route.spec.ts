@@ -1,5 +1,6 @@
 import { build } from '#app/app.js';
 import { initializeContainer } from '#app/container.js';
+import { USER_ROUTE } from '#app/modules/user/route.js';
 import { User } from '#app/modules/user/user.model.js';
 import expect from 'expect';
 import faker from 'faker';
@@ -16,7 +17,7 @@ const { app, container } = build({
 
 const UserModel = await container.cradle.UserModel;
 
-describe('GET /api/users', () => {
+describe(`GET ${USER_ROUTE}`, () => {
   before(async () => {
     await container.cradle.mongoose;
   });
@@ -28,7 +29,7 @@ describe('GET /api/users', () => {
   it('should return empty array', async () => {
     const response = await app.inject({
       method: 'GET',
-      url: '/api/users',
+      url: USER_ROUTE,
     });
 
     expect(response.json()).toEqual([]);
@@ -42,7 +43,7 @@ describe('GET /api/users', () => {
 
     const response = await app.inject({
       method: 'GET',
-      url: '/api/users',
+      url: USER_ROUTE,
     });
 
     const users = response.json<User[]>();

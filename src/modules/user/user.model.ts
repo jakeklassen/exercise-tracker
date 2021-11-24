@@ -35,6 +35,7 @@ const exerciseSchema = new mongoose.Schema<Exercise>(
 );
 
 export interface User {
+  id: string;
   username: string;
   log: Document<Exercise>[];
   createdAt: Date;

@@ -74,7 +74,7 @@ describe(`POST ${USER_EXERCISE_CREATE_ROUTE}`, () => {
   });
 
   it('should return a valid response', async () => {
-    const url = USER_EXERCISE_CREATE_ROUTE.replace(':id', user._id);
+    const url = USER_EXERCISE_CREATE_ROUTE.replace(':id', user.id);
 
     const description = 'run';
     const duration = 22;
@@ -91,7 +91,7 @@ describe(`POST ${USER_EXERCISE_CREATE_ROUTE}`, () => {
     const exercise = response.json();
 
     expect(response.statusCode).toBe(StatusCodes.OK);
-    expect(exercise._id).toBe(user._id);
+    expect(exercise.id).toBe(user.id);
     expect(exercise.username).toBe(user.username);
     expect(exercise.description).toBe(description);
     expect(exercise.duration).toBe(duration);
@@ -99,7 +99,7 @@ describe(`POST ${USER_EXERCISE_CREATE_ROUTE}`, () => {
   });
 
   it('should accept user provided `date` value', async () => {
-    const url = USER_EXERCISE_CREATE_ROUTE.replace(':id', user._id);
+    const url = USER_EXERCISE_CREATE_ROUTE.replace(':id', user.id);
 
     const payload = {
       description: 'run',
@@ -116,7 +116,7 @@ describe(`POST ${USER_EXERCISE_CREATE_ROUTE}`, () => {
     const exercise = response.json();
 
     expect(response.statusCode).toBe(StatusCodes.OK);
-    expect(exercise._id).toBe(user._id);
+    expect(exercise.id).toBe(user.id);
     expect(exercise.username).toBe(user.username);
     expect(exercise.description).toBe(payload.description);
     expect(exercise.duration).toBe(payload.duration);

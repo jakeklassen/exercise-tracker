@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@sinclair/typebox': ^0.22.1
   '@types/convict': ^6.1.1
   '@types/faker': ^5.5.9
   '@types/mocha': ^9.0.0
@@ -50,6 +51,7 @@ specifiers:
   wtfnode: ^0.9.1
 
 dependencies:
+  '@sinclair/typebox': 0.22.1
   awilix: 6.0.0
   bson: 4.6.0
   change-case: 4.1.2
@@ -225,6 +227,10 @@ packages:
       argparse: 1.0.10
       colors: 1.2.5
       string-argv: 0.3.1
+    dev: false
+
+  /@sinclair/typebox/0.22.1:
+    resolution: {integrity: sha512-cYkZ5oYd/KrzwcocLtGI4QRi6oniV4eP8IEefEhZp8YjLhrsrHiiaeChs8a9T/YKIlIjHMoxoOCWOUkZ/vviNw==}
     dev: false
 
   /@sindresorhus/is/0.14.0:

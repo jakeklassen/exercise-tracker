@@ -76,7 +76,7 @@ export const resolveUserExerciseCreateRoute = ({ UserModel }: AppCradle) =>
 
         const response = {
           ...exercise.toJSON(),
-          _id: user._id,
+          id: user.id,
           username: user.username,
         };
 

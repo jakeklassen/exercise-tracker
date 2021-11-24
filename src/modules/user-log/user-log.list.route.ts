@@ -46,7 +46,7 @@ export const resolveGetUserExerciseLogRoute = ({ UserModel }: AppCradle) =>
         }
 
         const response = {
-          _id: user._id,
+          id: user.id,
           count: user.log.length,
           log: user.log,
           username: user.username,

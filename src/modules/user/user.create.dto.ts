@@ -1,6 +1,5 @@
+import { UserDto } from '#app/modules/user/user.dto.js';
 import { Static, Type } from '@sinclair/typebox';
-import { FastifySchema, RouteOptions } from 'fastify';
-import { IncomingMessage, Server, ServerResponse } from 'node:http';
 
 export const CreateUserDto = Type.Object({
   username: Type.String({
@@ -10,23 +9,8 @@ export const CreateUserDto = Type.Object({
 
 export type CreateUserDtoType = Static<typeof CreateUserDto>;
 
-export const CreateUserOkResponseDto = Type.Object({
-  id: Type.String(),
-  username: Type.String(),
-  createdAt: Type.String(),
-  updatedAt: Type.String(),
-});
+export const CreateUserOkResponseDto = UserDto;
 
 export type CreateUserOkResponseDtoType = Static<
   typeof CreateUserOkResponseDto
->;
-
-export type CreateUserRoute = RouteOptions<
-  Server,
-  IncomingMessage,
-  ServerResponse,
-  {
-    Body: CreateUserDtoType;
-  },
-  FastifySchema
 >;

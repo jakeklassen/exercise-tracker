@@ -1,7 +1,10 @@
 import { AppCradle } from '#app/container.js';
 import { USER_ROUTE } from '#app/modules/user/route.js';
+import {
+  UserListDto,
+  UserListDtoType,
+} from '#app/modules/user/user.list.dto.js';
 import { FastifySchema, RouteOptions } from 'fastify';
-import { RouteGenericInterface } from 'fastify/types/route';
 import { IncomingMessage, Server, ServerResponse } from 'http';
 import { StatusCodes } from 'http-status-codes';
 
@@ -15,8 +18,9 @@ type ListUserRoute = RouteOptions<
   Server,
   IncomingMessage,
   ServerResponse,
-  RouteGenericInterface,
-  unknown,
+  {
+    Reply: UserListDtoType;
+  },
   FastifySchema
 >;
 
@@ -26,23 +30,24 @@ export const resolveUserListRoute = ({ UserModel }: AppCradle) =>
     url: USER_ROUTE,
     schema: {
       response: {
-        [StatusCodes.OK]: {
-          type: 'array',
-          items: {
-            type: 'object',
-            properties: {
-              _id: { type: 'string' },
-              username: { type: 'string' },
-              createdAt: { type: 'string' },
-              updatedAt: { type: 'string' },
-            },
-          },
-        },
+        [StatusCodes.OK]: UserListDto,
       },
     },
 
     async handler() {
-      return await UserModel.then((model) => model.find());
+      return await UserModel.then((model) =>
+        model.aggregate([
+          {
+            $project: {
+              _id: 1,
+              username: 1,
+              log: 1,
+              createdAt: 1,
+              updatedAt: 1,
+            },
+          },
+        ]),
+      );
     },
   } as ListUserRoute);
 

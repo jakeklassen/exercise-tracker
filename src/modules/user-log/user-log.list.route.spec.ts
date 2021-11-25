@@ -59,7 +59,7 @@ describe(`GET ${USER_LOG_LIST_ROUTE}`, () => {
   });
 
   it('should have 0 exercises', async () => {
-    const url = USER_LOG_LIST_ROUTE.replace(':id', user.id);
+    const url = USER_LOG_LIST_ROUTE.replace(':id', user._id);
 
     const response = await app.inject({
       method: 'GET',
@@ -69,14 +69,14 @@ describe(`GET ${USER_LOG_LIST_ROUTE}`, () => {
     const log = response.json();
 
     expect(response.statusCode).toBe(StatusCodes.OK);
-    expect(log.id).toBe(user.id);
+    expect(log._id).toBe(user._id);
     expect(log.username).toBe(user.username);
     expect(log.count).toBe(0);
     expect(log.log.length).toBe(0);
   });
 
   it('should have 1 exercise', async () => {
-    const url = USER_LOG_LIST_ROUTE.replace(':id', user.id);
+    const url = USER_LOG_LIST_ROUTE.replace(':id', user._id);
 
     const payload = {
       description: 'run',
@@ -86,7 +86,7 @@ describe(`GET ${USER_LOG_LIST_ROUTE}`, () => {
 
     await app.inject({
       method: 'POST',
-      url: USER_EXERCISE_CREATE_ROUTE.replace(':id', user.id),
+      url: USER_EXERCISE_CREATE_ROUTE.replace(':id', user._id),
       payload,
     });
 
@@ -98,7 +98,7 @@ describe(`GET ${USER_LOG_LIST_ROUTE}`, () => {
     const log = response.json();
 
     expect(response.statusCode).toBe(StatusCodes.OK);
-    expect(log.id).toBe(user.id);
+    expect(log._id).toBe(user._id);
     expect(log.username).toBe(user.username);
     expect(log.count).toBe(1);
     expect(log.log.length).toBe(1);

@@ -61,6 +61,7 @@ export const resolveUserExerciseCreateRoute = ({ UserModel }: AppCradle) =>
           },
           {
             new: true,
+            lean: true,
           },
         );
 
@@ -75,8 +76,8 @@ export const resolveUserExerciseCreateRoute = ({ UserModel }: AppCradle) =>
         assert.ok(exercise);
 
         const response = {
-          ...exercise.toJSON(),
-          id: user.id,
+          ...exercise,
+          _id: user._id,
           username: user.username,
         };
 

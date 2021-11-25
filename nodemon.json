@@ -2,5 +2,5 @@
   "watch": ["src"],
   "ignore": ["src/**/*.test.ts"],
   "ext": "ts,mjs,js,json,graphql",
-  "exec": "yarn build && node -r dotenv/config dist"
+  "exec": "yarn build && node -r dotenv/config --inspect dist"
 }

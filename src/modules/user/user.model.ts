@@ -1,5 +1,5 @@
 import { AppCradle } from '#app/container.js';
-import mongoose, { Document } from 'mongoose';
+import mongoose from 'mongoose';
 
 declare module '#app/container.js' {
   interface AppCradle {
@@ -35,9 +35,10 @@ const exerciseSchema = new mongoose.Schema<Exercise>(
 );
 
 export interface User {
-  id: string;
+  _id: string;
   username: string;
-  log: Document<Exercise>[];
+  // How would I also support Document<Exercise>[]
+  log: Exercise[];
   createdAt: Date;
   updatedAt: Date;
 }

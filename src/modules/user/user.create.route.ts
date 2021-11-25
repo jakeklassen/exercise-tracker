@@ -46,8 +46,9 @@ export const resolveUserCreateRoute = ({ UserModel }: AppCradle) =>
       );
 
       return {
-        id: user.id,
+        _id: user._id,
         username: user.username,
+        log: user.log,
         createdAt: user.createdAt.toISOString(),
         updatedAt: user.updatedAt.toISOString(),
       };

@@ -1,4 +1,5 @@
 import { AppCradle } from '#app/container.js';
+import assert from 'assert';
 import { MongoDBStorage, RunnableMigration, Umzug } from 'umzug';
 import { URL } from 'url';
 
@@ -22,7 +23,9 @@ export default async function resolveUmzug(cradle: AppCradle): Promise<Umzug> {
     migrations: {
       glob: ['migrations/*.js', { cwd: migrationsPath }],
       resolve(params) {
-        const getModule = () => import(params.path!);
+        assert.ok(params.path);
+
+        const getModule = () => import(params.path as string);
 
         const resolver: RunnableMigration<AppCradle> = {
           name: params.name,

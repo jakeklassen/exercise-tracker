@@ -6,11 +6,12 @@
   "configurations": [
     {
       "name": "Attach",
-      "port": 9329,
+      "port": 9229,
       "request": "attach",
       "skipFiles": ["<node_internals>/**"],
       "type": "node",
-      "sourceMaps": true
+      "sourceMaps": true,
+      "outFiles": ["${workspaceFolder}/**/*.js", "!**/node_modules/**"]
     },
     {
       "type": "node",

@@ -12,7 +12,7 @@ await esbuild
     write: true,
     bundle: false,
     outdir: 'dist',
-    sourcemap: 'external',
+    sourcemap: 'inline',
     loader: {
       '.ts': 'ts',
     },

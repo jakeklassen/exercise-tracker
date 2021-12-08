@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@sinclair/typebox': ^0.23.0
+  '@sinclair/typebox': ^0.23.1
   '@types/convict': 6.1.1
   '@types/faker': 5.5.9
   '@types/mocha': 9.0.0
@@ -23,7 +23,7 @@ specifiers:
   eslint-plugin-prettier: 4.0.0
   expect: 27.4.2
   faker: ^5.5.3
-  fastify: ^3.24.0
+  fastify: ^3.24.1
   fp-ts: ^2.11.5
   get-port: 6.0.0
   get-port-cli: 3.0.0
@@ -31,13 +31,13 @@ specifiers:
   io-ts: ^2.2.16
   json-schema-to-typescript: ^10.1.5
   mocha: 9.1.3
-  mongodb: ^4.2.0
-  mongoose: ^6.0.13
+  mongodb: ^4.2.1
+  mongoose: ^6.1.0
   monocle-ts: ^2.3.11
   newtype-ts: ^0.3.4
   nodemon: 2.0.15
   npm-run-all: 4.1.5
-  pino-http: ^6.2.0
+  pino-http: ^6.3.3
   pino-pretty: ^7.2.0
   prettier: 2.5.1
   reflect-metadata: ^0.1.13
@@ -51,23 +51,23 @@ specifiers:
   wtfnode: 0.9.1
 
 dependencies:
-  '@sinclair/typebox': 0.23.0
+  '@sinclair/typebox': 0.23.1
   awilix: 6.0.0
   bson: 4.6.0
   change-case: 4.1.2
   comment-json: 4.1.1
   convict: 6.2.1
   faker: 5.5.3
-  fastify: 3.24.0
+  fastify: 3.24.1
   fp-ts: 2.11.5
   http-status-codes: 2.1.4
   io-ts: 2.2.16_fp-ts@2.11.5
   json-schema-to-typescript: 10.1.5
-  mongodb: 4.2.0
-  mongoose: 6.0.13
+  mongodb: 4.2.1
+  mongoose: 6.1.0
   monocle-ts: 2.3.11_fp-ts@2.11.5
   newtype-ts: 0.3.4_fp-ts@2.11.5+monocle-ts@2.3.11
-  pino-http: 6.2.0
+  pino-http: 6.3.3
   pino-pretty: 7.2.0
   reflect-metadata: 0.1.13
   typescript: 4.5.2
@@ -220,8 +220,8 @@ packages:
       fastq: 1.13.0
     dev: true
 
-  /@rushstack/ts-command-line/4.10.4:
-    resolution: {integrity: sha512-4T5ao4UgDb6LmiRj4GumvG3VT/p6RSMgl7TN7S58ifaAGN2GeTNBajFCDdJs9QQP0d/4tA5p0SFzT7Ps5Byirg==}
+  /@rushstack/ts-command-line/4.10.5:
+    resolution: {integrity: sha512-5fVlTDbKsJ5WyT6L7NrnOlLG3uoITKxoqTPP2j0QZEi95kPbVT4+VPZaXXDJtkrao9qrIyig8pLK9WABY1bb3w==}
     dependencies:
       '@types/argparse': 1.0.38
       argparse: 1.0.10
@@ -229,8 +229,8 @@ packages:
       string-argv: 0.3.1
     dev: false
 
-  /@sinclair/typebox/0.23.0:
-    resolution: {integrity: sha512-G8+yjtQlXVBOSWqsi8ezmmt2Y4VyR+FJOvYV/3DwKcJiAvyU+WcSA9chS5X3H+2VN3L/MEHm/puenGo9S6kbcw==}
+  /@sinclair/typebox/0.23.1:
+    resolution: {integrity: sha512-XsmyWfps86gFmZhK97HDesbCe/pR+8qf/VveZaADI6oCk0cHGq6WeKdUHM/a8NeSetv/vpUf19ubwU34C2PVWw==}
     dev: false
 
   /@sindresorhus/is/0.14.0:
@@ -646,7 +646,7 @@ packages:
     resolution: {integrity: sha512-XW2CMCmZaCmCCsIaJaLKxAzPwF37fXi1KGxNOvedOpeisLdmxZnblGc3hpHWYnlP+KOUxZsazh43WXNHgXpbqw==}
     dependencies:
       archy: 1.0.0
-      debug: 4.3.2
+      debug: 4.3.3
       fastq: 1.13.0
       queue-microtask: 1.2.3
     transitivePeerDependencies:
@@ -943,8 +943,8 @@ packages:
       yargs-parser: 20.2.9
     dev: false
 
-  /cookie/0.4.0:
-    resolution: {integrity: sha512-+Hp8fLp57wnUSt0tY0tHEXh4voZRDnoIrZPqlo3DPiI4y9lwg/jqx+1Om94/W6ZaPDOUbnjOt/99w66zk+l1Xg==}
+  /cookie/0.4.1:
+    resolution: {integrity: sha512-ZwrFkGJxUR3EIoXtO+yVE69Eb7KlixbaeAWfBQB9vVsNn/o+Yw69gBWSSDK825hQNdN+wF8zELf3dFNl/kxkUA==}
     engines: {node: '>= 0.6'}
     dev: false
 
@@ -1012,6 +1012,7 @@ packages:
         optional: true
     dependencies:
       ms: 2.1.2
+    dev: true
 
   /debug/4.3.2_supports-color@8.1.1:
     resolution: {integrity: sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw==}
@@ -1025,6 +1026,18 @@ packages:
       ms: 2.1.2
       supports-color: 8.1.1
     dev: true
+
+  /debug/4.3.3:
+    resolution: {integrity: sha512-/zxw5+vh1Tfv+4Qn7a5nsbcJKPaSvCDhojn6FEl9vupwK2VCSDtEiEtqr8DFtzYFOdz63LBkxec7DYuc2jon6Q==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+    dependencies:
+      ms: 2.1.2
+    dev: false
 
   /decamelize-keys/1.1.0:
     resolution: {integrity: sha1-0XGoeTMlKAfrPLYdwcFEXQeN8tk=}
@@ -1689,8 +1702,8 @@ packages:
     resolution: {integrity: sha512-s1EQguBw/9qtc1p/WTY4eq9WMRIACkj+HTcOIK1in4MV5aFaQC9ZCIt0dJ7pr5bIf4lPpHvAtP2ywpTNgs7hqw==}
     dev: false
 
-  /fastify/3.24.0:
-    resolution: {integrity: sha512-fmRyrI25rzLGHDQ1FME02NsbP658mVa0EaSqfYUFwx2UOF+4/GcyNrsdWILSDOEiUbOsRYCD3sRCE9v7mvRLRQ==}
+  /fastify/3.24.1:
+    resolution: {integrity: sha512-ZL0V6u37d65tAY8lMwVMFtFvnEeJcG80QBNSdChqCm4i4x+is/38OU14gzJuRXhpenTL+pTJzNcu5Kn1ouzM3Q==}
     dependencies:
       '@fastify/ajv-compiler': 1.1.0
       abstract-logging: 2.0.1
@@ -1700,7 +1713,7 @@ packages:
       fastify-warning: 0.2.0
       find-my-way: 4.4.0
       flatstr: 1.0.12
-      light-my-request: 4.6.0
+      light-my-request: 4.7.0
       pino: 6.13.3
       proxy-addr: 2.0.7
       rfdc: 1.3.0
@@ -1778,8 +1791,8 @@ packages:
     resolution: {integrity: sha512-OqlwJq1BdpB83BZXTqI+dNcA6uYk6qk4u9Cgnt64Y+XS7dwdbp/mobx8S2KXf2AXH+scNmA/UVK3SEFHR3vHZA==}
     dev: false
 
-  /fs-jetpack/4.2.0:
-    resolution: {integrity: sha512-b7kFUlXAA4Q12qENTdU5DCQkf8ojEk4fpaXXu/bqayobwm0EfjjlwBCFqRBM2t8I75s0ifk0ajRqddXy2bAHJg==}
+  /fs-jetpack/4.3.0:
+    resolution: {integrity: sha512-Zx4OJ8HyKvZL9sgxegMGRCgAJSQET5Cqpj/SESwnzqHruHvhkilJBGLoZf6EiYr3UWJDqcPoWDX7aAfaj7D9Qw==}
     dependencies:
       minimatch: 3.0.4
       rimraf: 2.7.1
@@ -2473,11 +2486,11 @@ packages:
       type-check: 0.4.0
     dev: true
 
-  /light-my-request/4.6.0:
-    resolution: {integrity: sha512-wQWGwMr7l7fzYPzzzutRoEI1vuREpIpJpTi3t8cHlGdsnBrOF5iR559Bkh+nkDGgnUJtNuuutjnqbxP7zPWKkA==}
+  /light-my-request/4.7.0:
+    resolution: {integrity: sha512-LTa8YZp3K2AUpqUnwwKajoIHcsKOBnzwJNQSrk7unziPwo6CjOYjyO0F9wfkxFvP+nBsCGe3eMPnedVgIIgdAw==}
     dependencies:
       ajv: 8.8.2
-      cookie: 0.4.0
+      cookie: 0.4.1
       fastify-warning: 0.2.0
       set-cookie-parser: 2.4.8
     dev: false
@@ -2705,8 +2718,8 @@ packages:
       whatwg-url: 11.0.0
     dev: false
 
-  /mongodb/4.1.4:
-    resolution: {integrity: sha512-Cv/sk8on/tpvvqbEvR1h03mdyNdyvvO+WhtFlL4jrZ+DSsN/oSQHVqmJQI/sBCqqbOArFcYCAYDfyzqFwV4GSQ==}
+  /mongodb/4.2.1:
+    resolution: {integrity: sha512-nDC+ulM/Ea3Q2VG5eemuGfB7T4ORwrtKegH2XW9OLlUBgQF6OTNrzFCS1Z3SJGVA+T0Sr1xBYV6DMnp0A7us0g==}
     engines: {node: '>=12.9.0'}
     dependencies:
       bson: 4.6.0
@@ -2716,24 +2729,13 @@ packages:
       saslprep: 1.0.3
     dev: false
 
-  /mongodb/4.2.0:
-    resolution: {integrity: sha512-lg3MJ9dAKxhogRnIB6/j63gfD7JryZwRC0nNzZ82RhENw4nCmscZVqRfOmNzTvSNndJx9ZhxZpm9JvnKuH/GTA==}
-    engines: {node: '>=12.9.0'}
-    dependencies:
-      bson: 4.6.0
-      denque: 2.0.1
-      mongodb-connection-string-url: 2.2.0
-    optionalDependencies:
-      saslprep: 1.0.3
-    dev: false
-
-  /mongoose/6.0.13:
-    resolution: {integrity: sha512-/M/YKgx23fCX+j0lwObaHbCibXnMjyWeQrXZf0WaQeS/hL86wQVSmaOxh+kZXfyLOUr+vT2Hl44o50GZHUrKWw==}
+  /mongoose/6.1.0:
+    resolution: {integrity: sha512-w3lA9ua4nD0qnsl+p4ExnK7wf/+BBFAiv/V/ufiWbV5qe1GT/IUzvP7E9rhxlBpTKL81M501wrrUr3Nc1dvBxw==}
     engines: {node: '>=12.0.0'}
     dependencies:
       bson: 4.6.0
       kareem: 2.3.2
-      mongodb: 4.1.4
+      mongodb: 4.2.1
       mpath: 0.8.4
       mquery: 4.0.0
       ms: 2.1.2
@@ -2761,7 +2763,7 @@ packages:
     resolution: {integrity: sha512-nGjm89lHja+T/b8cybAby6H0YgA4qYC/lx6UlwvHGqvTq8bDaNeCwl1sY8uRELrNbVWJzIihxVd+vphGGn1vBw==}
     engines: {node: '>=12.0.0'}
     dependencies:
-      debug: 4.3.2
+      debug: 4.3.3
       regexp-clone: 1.0.0
       sliced: 1.0.1
     transitivePeerDependencies:
@@ -3089,13 +3091,13 @@ packages:
       split2: 4.1.0
     dev: false
 
-  /pino-http/6.2.0:
-    resolution: {integrity: sha512-3RrKWiyfR9lvIndc1AQoj3hI7mOS5hYHG/ZQYj6R7eu/J1OYOLk7o6ZQwiatEiNIsgqHT/6FPjp3NCUPohvq0g==}
+  /pino-http/6.3.3:
+    resolution: {integrity: sha512-/TkDxOesPx4fGZRuOozYm1NdGbmkpqgGi00GY4ykM/1N3vlrisBmlnJ0PXU47xUPdMh/wt0GmkCtg8z2tBhwSA==}
     dependencies:
       fast-url-parser: 1.1.3
       get-caller-file: 2.0.5
-      pino: 7.4.0
-      pino-std-serializers: 4.0.0
+      pino: 7.5.1
+      pino-std-serializers: 5.0.0
     dev: false
 
   /pino-pretty/7.2.0:
@@ -3124,6 +3126,10 @@ packages:
     resolution: {integrity: sha512-cK0pekc1Kjy5w9V2/n+8MkZwusa6EyyxfeQCB799CQRhRt/CqYKiWs5adeu8Shve2ZNffvfC/7J64A2PJo1W/Q==}
     dev: false
 
+  /pino-std-serializers/5.0.0:
+    resolution: {integrity: sha512-YC5Lv+nNxY51oicb/t8VX/sA3dnecCXeQ7heir+H+c4fbg3LD65NFdrfP3Y2ufR0Y/EYbEs5UDxHIB9NwCmYyQ==}
+    dev: false
+
   /pino/6.13.3:
     resolution: {integrity: sha512-tJy6qVgkh9MwNgqX1/oYi3ehfl2Y9H0uHyEEMsBe74KinESIjdMrMQDWpcZPpPicg3VV35d/GLQZmo4QgU2Xkg==}
     hasBin: true
@@ -3137,8 +3143,8 @@ packages:
       sonic-boom: 1.4.1
     dev: false
 
-  /pino/7.4.0:
-    resolution: {integrity: sha512-qEHLtKcmYcid6s2qjlGTxaLe9Lq1IiGmd74IZb9Obi/FRTaA+ymb8FD/cmOIL4vt6ug/EtmhGwxZbiGhI+7cuQ==}
+  /pino/7.5.1:
+    resolution: {integrity: sha512-Wzo2G7CLaRHKOz3+Ex006LC5Xi0xEUm+mwm/h0NKzuKZONdekcbmjXg7vWDoO8hVTGX+1RuUy2fwlzvZ24EI5A==}
     hasBin: true
     dependencies:
       fast-redact: 3.0.2
@@ -3149,8 +3155,8 @@ packages:
       pino-std-serializers: 4.0.0
       quick-format-unescaped: 4.0.4
       real-require: 0.1.0
-      safe-stable-stringify: 2.2.0
-      sonic-boom: 2.3.1
+      safe-stable-stringify: 2.3.1
+      sonic-boom: 2.4.1
       thread-stream: 0.13.0
     dev: false
 
@@ -3422,8 +3428,8 @@ packages:
       ret: 0.2.2
     dev: false
 
-  /safe-stable-stringify/2.2.0:
-    resolution: {integrity: sha512-C6AuMdYPuPV/P1leplHNu0lgc2LAElq/g3TdoksDCIVtBhr78o/CH03bt/9SKqugFbKU9CUjsNlCu0fjtQzQUw==}
+  /safe-stable-stringify/2.3.1:
+    resolution: {integrity: sha512-kYBSfT+troD9cDA85VDnHZ1rpHC50O0g1e6WlGHVCz/g+JS+9WKLj+XwFYyR8UbrZN8ll9HUpDAAddY58MGisg==}
     engines: {node: '>=10'}
     dev: false
 
@@ -3576,6 +3582,12 @@ packages:
     resolution: {integrity: sha512-o0vJPsRiCW5Q0EmRKjNiiYGy2DqSXcxk4mY9vIBSPwmkH/e/vJ2Tq8EECd5NTiO77x8vlVN+ykDjRQJTqf7eKg==}
     dependencies:
       atomic-sleep: 1.0.0
+
+  /sonic-boom/2.4.1:
+    resolution: {integrity: sha512-WgtVLfGl347/zS1oTuLaOAvVD5zijgjphAJHgbbnBJGgexnr+C1ULSj0j7ftoGxpuxR4PaV635NkwFemG8m/5w==}
+    dependencies:
+      atomic-sleep: 1.0.0
+    dev: false
 
   /sparse-bitfield/3.0.3:
     resolution: {integrity: sha1-/0rm5oZWBWuks+eSqzM004JzyhE=}
@@ -4134,10 +4146,10 @@ packages:
     prepare: true
     requiresBuild: true
     dependencies:
-      '@rushstack/ts-command-line': 4.10.4
+      '@rushstack/ts-command-line': 4.10.5
       '@types/verror': 1.10.5
       emittery: 0.10.0
-      fs-jetpack: 4.2.0
+      fs-jetpack: 4.3.0
       glob: 7.2.0
       type-fest: 2.8.0
       verror: 1.10.1

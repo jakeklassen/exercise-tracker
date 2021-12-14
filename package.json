@@ -53,7 +53,7 @@
     "@types/convict": "6.1.1",
     "@types/faker": "5.5.9",
     "@types/mocha": "9.0.0",
-    "@types/node": "16.11.12",
+    "@types/node": "16.11.13",
     "@types/pino-http": "5.8.1",
     "@types/wtfnode": "0.7.0",
     "@typescript-eslint/eslint-plugin": "5.6.0",

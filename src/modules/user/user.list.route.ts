@@ -39,7 +39,6 @@ export const resolveUserListRoute = ({ UserModel }: AppCradle) =>
         model.aggregate([
           {
             $project: {
-              _id: 1,
               username: 1,
               log: 1,
               createdAt: 1,

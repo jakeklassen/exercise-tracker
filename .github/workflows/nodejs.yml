@@ -4,12 +4,7 @@ on: [push]
 
 jobs:
   container-job:
-    strategy:
-      matrix:
-        os: [ubuntu-20.04]
-        node-version: [16.x]
-
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-20.04
     container: mhart/alpine-node:16
 
     services:
@@ -25,7 +20,7 @@ jobs:
 
       - uses: actions/setup-node@v2
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: '16'
 
       - name: Cache pnpm modules
         uses: actions/cache@v2
@@ -33,14 +28,12 @@ jobs:
           path: ~/.pnpm-store
           key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
-            ${{ runner.os }}-${{ matrix.node-version }}-
             ${{ runner.os }}-
 
-      - name: Install pnpm
-        run: npm i -g pnpm
-
-      - name: Install deps
-        run: pnpm i
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 6.23.1
+          run_install: true
 
       - name: Type Check
         run: yarn typecheck

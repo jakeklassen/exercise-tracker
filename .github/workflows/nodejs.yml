@@ -6,10 +6,10 @@ jobs:
   container-job:
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest]
+        os: [ubuntu-20.04]
         node-version: [16.x]
 
-    runs-on: ubuntu-20.04
+    runs-on: ${{ matrix.os }}
     container: mhart/alpine-node:16
 
     services:

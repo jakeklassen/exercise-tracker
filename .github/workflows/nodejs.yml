@@ -44,5 +44,5 @@ jobs:
           pnpm run pretest
           pnpm run test
         env:
-          MONGO_URL: mongodb://tantor:elephant@mongo:27017/tantor-test?authSource=admin
+          MONGO_URL: mongodb://tantor:elephant@mongo
           MONGO_DB: tantor-test

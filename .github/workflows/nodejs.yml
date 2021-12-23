@@ -8,7 +8,7 @@ jobs:
 
     services:
       mongo:
-        image: mongo
+        image: mongo:5.0.5
         env:
           MONGO_INITDB_ROOT_USERNAME: tantor
           MONGO_INITDB_ROOT_PASSWORD: elephant
@@ -40,7 +40,9 @@ jobs:
         run: pnpm run typecheck
 
       - name: Test
-        run: pnpm run test
+        run: |
+          pnpm run pretest
+          pnpm run test
         env:
           MONGO_URL: mongodb://tantor:elephant@mongo:27017/tantor-test?authSource=admin
           MONGO_DB: tantor-test

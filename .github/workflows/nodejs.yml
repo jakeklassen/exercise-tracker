@@ -4,6 +4,11 @@ on: [push]
 
 jobs:
   container-job:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+        node-version: [16.x]
+
     runs-on: ubuntu-20.04
     container: mhart/alpine-node:16
 
@@ -18,8 +23,9 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v2
 
-      - name: Install
-        uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
 
       - name: Cache pnpm modules
         uses: actions/cache@v2
@@ -27,6 +33,7 @@ jobs:
           path: ~/.pnpm-store
           key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
           restore-keys: |
+            ${{ runner.os }}-${{ matrix.node-version }}-
             ${{ runner.os }}-
 
       - name: Install pnpm

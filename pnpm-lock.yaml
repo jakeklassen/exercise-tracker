@@ -41,7 +41,7 @@ specifiers:
   pino-pretty: ^7.2.0
   prettier: 2.5.1
   reflect-metadata: ^0.1.13
-  shx: 0.3.3
+  shx: 0.3.4
   tiny-glob: 0.2.9
   ts-mockito: 2.6.1
   ts-node: 10.4.0
@@ -71,7 +71,7 @@ dependencies:
   pino-pretty: 7.2.0
   reflect-metadata: 0.1.13
   typescript: 4.5.2
-  umzug: github.com/sequelize/umzug/b9dd193a4ed3ab45221d1f523026bf497134f173
+  umzug: github.com/sequelize/umzug/2cd626c24fb0affa2b82b590bbdf537ecfe6f876
 
 devDependencies:
   '@types/convict': 6.1.1
@@ -95,7 +95,7 @@ devDependencies:
   nodemon: 2.0.15
   npm-run-all: 4.1.5
   prettier: 2.5.1
-  shx: 0.3.3
+  shx: 0.3.4
   tiny-glob: 0.2.9
   ts-mockito: 2.6.1
   ts-node: 10.4.0_9d76e70337038c2de395d25cb461eec7
@@ -3519,8 +3519,8 @@ packages:
     resolution: {integrity: sha512-Vpfqwm4EnqGdlsBFNmHhxhElJYrdfcxPThu+ryKS5J8L/fhAwLazFZtq+S+TWZ9ANj2piSQLGj6NQg+lKPmxrw==}
     dev: true
 
-  /shelljs/0.8.4:
-    resolution: {integrity: sha512-7gk3UZ9kOfPLIAbslLzyWeGiEqx9e3rxwZM0KE6EL8GlGwjym9Mrlx5/p33bWTu9YG6vcS4MBxYZDHYr5lr8BQ==}
+  /shelljs/0.8.5:
+    resolution: {integrity: sha512-TiwcRcrkhHvbrZbnRcFYMLl30Dfov3HKqzp5tO5b4pt6G/SezKcYhmDg15zXVBswHmctSAQKznqNW2LO5tTDow==}
     engines: {node: '>=4'}
     hasBin: true
     dependencies:
@@ -3529,13 +3529,13 @@ packages:
       rechoir: 0.6.2
     dev: true
 
-  /shx/0.3.3:
-    resolution: {integrity: sha512-nZJ3HFWVoTSyyB+evEKjJ1STiixGztlqwKLTUNV5KqMWtGey9fTd4KU1gdZ1X9BV6215pswQ/Jew9NsuS/fNDA==}
+  /shx/0.3.4:
+    resolution: {integrity: sha512-N6A9MLVqjxZYcVn8hLmtneQWIJtp8IKzMP4eMnx+nqkvXoqinUPCbUFLp2UcWTEIUONhlk0ewxr/jaVGlc+J+g==}
     engines: {node: '>=6'}
     hasBin: true
     dependencies:
       minimist: 1.2.5
-      shelljs: 0.8.4
+      shelljs: 0.8.5
     dev: true
 
   /side-channel/1.0.4:
@@ -4137,10 +4137,10 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  github.com/sequelize/umzug/b9dd193a4ed3ab45221d1f523026bf497134f173:
-    resolution: {tarball: https://codeload.github.com/sequelize/umzug/tar.gz/b9dd193a4ed3ab45221d1f523026bf497134f173}
+  github.com/sequelize/umzug/2cd626c24fb0affa2b82b590bbdf537ecfe6f876:
+    resolution: {tarball: https://codeload.github.com/sequelize/umzug/tar.gz/2cd626c24fb0affa2b82b590bbdf537ecfe6f876}
     name: umzug
-    version: 3.0.0-beta-cli.17
+    version: 3.0.0
     engines: {node: '>=12'}
     prepare: true
     requiresBuild: true

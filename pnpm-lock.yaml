@@ -16,7 +16,7 @@ specifiers:
   clipboardy: 3.0.0
   comment-json: ^4.1.0
   convict: ^6.2.1
-  dotenv: 10.0.0
+  dotenv: 12.0.4
   esbuild: 0.14.5
   eslint: 8.4.1
   eslint-config-prettier: 8.3.0
@@ -71,7 +71,7 @@ dependencies:
   pino-pretty: 7.2.0
   reflect-metadata: 0.1.13
   typescript: 4.5.2
-  umzug: github.com/sequelize/umzug/b9dd193a4ed3ab45221d1f523026bf497134f173
+  umzug: github.com/sequelize/umzug/0d387579432cf55f9107e3dd421ead2613190ac2
 
 devDependencies:
   '@types/convict': 6.1.1
@@ -83,7 +83,7 @@ devDependencies:
   '@typescript-eslint/eslint-plugin': 5.7.0_831208d932b9b5f12aeef1ffc0d475f1
   '@typescript-eslint/parser': 5.7.0_eslint@8.4.1+typescript@4.5.2
   clipboardy: 3.0.0
-  dotenv: 10.0.0
+  dotenv: 12.0.4
   esbuild: 0.14.5
   eslint: 8.4.1
   eslint-config-prettier: 8.3.0_eslint@8.4.1
@@ -1141,9 +1141,9 @@ packages:
       is-obj: 2.0.0
     dev: true
 
-  /dotenv/10.0.0:
-    resolution: {integrity: sha512-rlBi9d8jpv9Sf1klPjNfFAuWDjKLwTIJJ/VxtoTwIR6hnZxcEOQCZg2oIL3MWBYw5GpUDKOEnND7LXTbIpQ03Q==}
-    engines: {node: '>=10'}
+  /dotenv/12.0.4:
+    resolution: {integrity: sha512-oWdqbSywffzH1l4WXKPHWA0TWYpqp7IyLfqjipT4upoIFS0HPMqtNotykQpD4iIg0BqtNmdgPCh2WMvMt7yTiw==}
+    engines: {node: '>=12'}
     dev: true
 
   /duplexer3/0.1.4:
@@ -4137,10 +4137,10 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  github.com/sequelize/umzug/b9dd193a4ed3ab45221d1f523026bf497134f173:
-    resolution: {tarball: https://codeload.github.com/sequelize/umzug/tar.gz/b9dd193a4ed3ab45221d1f523026bf497134f173}
+  github.com/sequelize/umzug/0d387579432cf55f9107e3dd421ead2613190ac2:
+    resolution: {tarball: https://codeload.github.com/sequelize/umzug/tar.gz/0d387579432cf55f9107e3dd421ead2613190ac2}
     name: umzug
-    version: 3.0.0-beta-cli.17
+    version: 3.0.0
     engines: {node: '>=12'}
     prepare: true
     requiresBuild: true

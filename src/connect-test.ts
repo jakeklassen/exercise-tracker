@@ -4,7 +4,7 @@ import pg from 'pg';
 const { Client } = pg;
 
 const client = new Client({
-  host: 'localhost',
+  host: 'postgres',
   user: 'sidequest',
   password: 'elephant',
   database: 'sidequest',

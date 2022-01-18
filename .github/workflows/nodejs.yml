@@ -29,7 +29,7 @@ jobs:
           POSTGRES_PASSWORD: elephant
           POSTGRES_DB: sidequest
         ports:
-          - '5432:5432'
+          - 5432:5432
 
     steps:
       - name: Install git

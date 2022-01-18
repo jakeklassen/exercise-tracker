@@ -28,11 +28,6 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v2
 
-      # Performs a clean installation of all dependencies
-      # in the `package.json` file
-      # - name: Install dependencies
-      #   run: pnpm i
-
       - name: Install
         uses: actions/checkout@v2
 

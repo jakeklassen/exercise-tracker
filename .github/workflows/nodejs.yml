@@ -5,7 +5,7 @@ on: [push]
 jobs:
   container-job:
     runs-on: ubuntu-20.04
-    # container: mhart/alpine-node:16
+    container: mhart/alpine-node:16
 
     services:
       mongo:
@@ -23,45 +23,33 @@ jobs:
           - 27017:27017
 
     steps:
-      # - name: Install git
-      #   run: apk add --no-cache git
+      - name: Install git
+        run: apk add --no-cache git
 
       - name: Check out repository code
         uses: actions/checkout@v2
 
-      - uses: pnpm/action-setup@646cdf48217256a3d0b80361c5a50727664284f2
+      - name: Cache pnpm modules
+        uses: actions/cache@v2
+        with:
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-
+
+      - uses: pnpm/action-setup@v2.0.1
         with:
           version: 6.27.0
-
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '16'
-          cache: 'pnpm'
-
-      # - name: Cache ~/.pnpm-store
-      #   uses: actions/cache@v2
-      #   env:
-      #     cache-name: cache-pnpm-store
-      #   with:
-      #     path: ~/.pnpm-store
-      #     key: ${{ runner.os }}-${{ matrix.node-version }}-test-${{ env.cache-name }}-${{ hashFiles('**/pnpm-lock.yaml') }}
-      #     restore-keys: |
-      #       ${{ runner.os }}-${{ matrix.node-version }}-test-${{ env.cache-name }}-
-      #       ${{ runner.os }}-${{ matrix.node-version }}-test-
-      #       ${{ runner.os }}-
-
-      - run: pnpm install
+          run_install: true
 
       - name: Build
         run: yarn build
 
-      # - name: Type Check
-      #   run: yarn typecheck
+      - name: Type Check
+        run: yarn typecheck
 
       - name: Test
-        # run: yarn test
-        run: |
-          yarn test
+        run: yarn test
         env:
           MONGO_URL: mongodb://tantor:elephant@mongo:27017/tantor-test?authSource=admin
           MONGO_DB: tantor-test

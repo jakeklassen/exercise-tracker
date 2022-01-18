@@ -47,8 +47,6 @@ export const initializeContainer = async () => {
        * @returns
        */
       formatName(name: string, descriptor: ModuleDescriptor): string {
-        // console.log(name, descriptor);
-
         if (name.endsWith('.model')) {
           return pascalCase(name);
         }

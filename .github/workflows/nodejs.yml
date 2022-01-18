@@ -5,7 +5,7 @@ on: [push]
 jobs:
   container-job:
     runs-on: ubuntu-20.04
-    container: mhart/alpine-node:16
+    # container: mhart/alpine-node:16
 
     services:
       mongo:
@@ -23,16 +23,20 @@ jobs:
           - 27017:27017
 
     steps:
-      - name: Install git
-        run: apk add --no-cache git
+      # - name: Install git
+      #   run: apk add --no-cache git
 
       - name: Check out repository code
         uses: actions/checkout@v2
 
-      # - uses: actions/setup-node@v2
-      #   with:
-      #     node-version: '16'
-      #     cache: 'yarn'
+      - uses: pnpm/action-setup@646cdf48217256a3d0b80361c5a50727664284f2
+        with:
+          version: 6.27.0
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          cache: 'pnpm'
 
       # - name: Cache ~/.pnpm-store
       #   uses: actions/cache@v2
@@ -46,10 +50,7 @@ jobs:
       #       ${{ runner.os }}-${{ matrix.node-version }}-test-
       #       ${{ runner.os }}-
 
-      - uses: pnpm/action-setup@v2.0.1
-        with:
-          version: 6.27.0
-          run_install: true
+      - run: pnpm install
 
       - name: Build
         run: yarn build

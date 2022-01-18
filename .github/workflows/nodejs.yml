@@ -22,15 +22,6 @@ jobs:
         ports:
           - 27017:27017
 
-      postgres:
-        image: 'postgres:13'
-        env:
-          POSTGRES_USER: sidequest
-          POSTGRES_PASSWORD: elephant
-          POSTGRES_DB: sidequest
-        ports:
-          - 5432:5432
-
     steps:
       - name: Install git
         run: apk add --no-cache git

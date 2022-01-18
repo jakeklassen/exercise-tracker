@@ -4,12 +4,8 @@ on: [push]
 
 jobs:
   container-job:
-    strategy:
-      matrix:
-        os: [ubuntu-20.04]
-        node-version: [16.x]
-
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-20.04
+    container: mhart/alpine-node:16
 
     services:
       mongo:
@@ -26,31 +22,38 @@ jobs:
         ports:
           - 27017:27017
 
+      postgres:
+        image: 'postgres:13'
+        env:
+          POSTGRES_USER: sidequest
+          POSTGRES_PASSWORD: elephant
+          POSTGRES_DB: sidequest
+        ports:
+          - '5432:5432'
+
     steps:
-      - name: Install zstd
-        run: apt install zstd
+      - name: Install git
+        run: apk add --no-cache git
 
       - name: Check out repository code
         uses: actions/checkout@v2
 
-      - name: Install
-        uses: actions/checkout@v2
+      # - uses: actions/setup-node@v2
+      #   with:
+      #     node-version: '16'
+      #     cache: 'yarn'
 
-      - uses: actions/setup-node@v2
-        with:
-          node-version: ${{ matrix.node-version }}
-
-      - name: Cache ~/.pnpm-store
-        uses: actions/cache@v2
-        env:
-          cache-name: cache-pnpm-store
-        with:
-          path: ~/.pnpm-store
-          key: ${{ runner.os }}-${{ matrix.node-version }}-test-${{ env.cache-name }}-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-${{ matrix.node-version }}-test-${{ env.cache-name }}-
-            ${{ runner.os }}-${{ matrix.node-version }}-test-
-            ${{ runner.os }}-
+      # - name: Cache ~/.pnpm-store
+      #   uses: actions/cache@v2
+      #   env:
+      #     cache-name: cache-pnpm-store
+      #   with:
+      #     path: ~/.pnpm-store
+      #     key: ${{ runner.os }}-${{ matrix.node-version }}-test-${{ env.cache-name }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+      #     restore-keys: |
+      #       ${{ runner.os }}-${{ matrix.node-version }}-test-${{ env.cache-name }}-
+      #       ${{ runner.os }}-${{ matrix.node-version }}-test-
+      #       ${{ runner.os }}-
 
       # - name: Install pnpm
       #   run: npm i -g pnpm
@@ -58,16 +61,20 @@ jobs:
       # - name: Install deps
       #   run: pnpm i
 
-      - uses: pnpm/action-setup@v2.0.1
-        with:
-          version: 6.26.1
-          run_install: true
+      - name: Install dependencies
+        run: yarn
 
-      - name: Type Check
-        run: yarn typecheck
+      - name: Build
+        run: yarn build
+
+      # - name: Type Check
+      #   run: yarn typecheck
 
       - name: Test
-        run: yarn test
+        # run: yarn test
+        run: |
+          node ./dist/connect-test.js
+          yarn test
         env:
-          MONGO_URL: mongodb://tantor:elephant@mongo/tantor-test?authSource=admin
+          MONGO_URL: mongodb://tantor:elephant@mongo:27017/tantor-test?authSource=admin
           MONGO_DB: tantor-test

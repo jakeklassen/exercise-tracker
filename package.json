@@ -49,7 +49,6 @@
     "umzug": "github:sequelize/umzug"
   },
   "devDependencies": {
-    "@faker-js/faker": "^6.0.0-alpha.3",
     "@types/convict": "6.1.1",
     "@types/faker": "^5.5.9",
     "@types/mocha": "9.0.0",

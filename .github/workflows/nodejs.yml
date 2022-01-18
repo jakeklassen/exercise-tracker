@@ -13,7 +13,7 @@ jobs:
 
     services:
       mongo:
-        image: mongo
+        image: mongo:5.0.5
         env:
           MONGO_INITDB_ROOT_USERNAME: tantor
           MONGO_INITDB_ROOT_PASSWORD: elephant

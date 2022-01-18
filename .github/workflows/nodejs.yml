@@ -73,7 +73,6 @@ jobs:
       - name: Test
         # run: yarn test
         run: |
-          node ./dist/connect-test.js
           yarn test
         env:
           MONGO_URL: mongodb://tantor:elephant@mongo:27017/tantor-test?authSource=admin

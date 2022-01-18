@@ -58,5 +58,5 @@ jobs:
       - name: Test
         run: yarn test
         env:
-          MONGO_URL: mongodb://tantor:elephant@mongo:27017/tantor-test?authSource=admin
+          MONGO_URL: mongodb://tantor:elephant@mongo/tantor-test?authSource=admin
           MONGO_DB: tantor-test

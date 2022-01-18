@@ -23,7 +23,7 @@ specifiers:
   eslint-config-prettier: 8.3.0
   eslint-plugin-prettier: 4.0.0
   expect: 27.4.6
-  faker: ^5.5.3
+  faker: 5.5.3
   fastify: ^3.25.3
   fp-ts: ^2.11.8
   get-port: 6.0.0

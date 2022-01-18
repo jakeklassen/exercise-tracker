@@ -1,8 +1,8 @@
 import { build } from '#app/app.js';
 import { initializeContainer } from '#app/container.js';
 import { USER_ROUTE } from '#app/modules/user/route.js';
+import faker from '@faker-js/faker';
 import expect from 'expect';
-import faker from 'faker';
 import { StatusCodes } from 'http-status-codes';
 
 const testContainer = await initializeContainer();

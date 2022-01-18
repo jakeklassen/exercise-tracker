@@ -49,7 +49,7 @@ specifiers:
   ts-node: 10.4.0
   tsm: 2.2.1
   typescript: ^4.5.4
-  umzug: github:sequelize/umzug
+  umzug: ^3.0.0
   wtfnode: 0.9.1
 
 dependencies:
@@ -73,7 +73,7 @@ dependencies:
   pino-pretty: 7.3.0
   reflect-metadata: 0.1.13
   typescript: 4.5.4
-  umzug: github.com/sequelize/umzug/0d387579432cf55f9107e3dd421ead2613190ac2
+  umzug: 3.0.0
 
 devDependencies:
   '@types/convict': 6.1.1
@@ -4047,6 +4047,19 @@ packages:
     hasBin: true
     dev: false
 
+  /umzug/3.0.0:
+    resolution: {integrity: sha512-uHeJsOJ7qtoIkZmtknpg+iSlI25m7glBA237pYp5fMsEKnRfRY+F4FP8eGx28g6b0VujkniC6Zlz09lbDFuBbw==}
+    engines: {node: '>=12'}
+    dependencies:
+      '@rushstack/ts-command-line': 4.10.6
+      '@types/verror': 1.10.5
+      emittery: 0.10.0
+      fs-jetpack: 4.3.1
+      glob: 7.2.0
+      type-fest: 2.9.0
+      verror: 1.10.1
+    dev: false
+
   /unbox-primitive/1.0.1:
     resolution: {integrity: sha512-tZU/3NqK3dA5gpE1KtyiJUrEB0lxnGkMFHptJ7q6ewdZ8s12QrODwNbhIJStmJkd1QDXa1NRA8aF2A1zk/Ypyw==}
     dependencies:
@@ -4273,20 +4286,3 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
-
-  github.com/sequelize/umzug/0d387579432cf55f9107e3dd421ead2613190ac2:
-    resolution: {tarball: https://codeload.github.com/sequelize/umzug/tar.gz/0d387579432cf55f9107e3dd421ead2613190ac2}
-    name: umzug
-    version: 3.0.0
-    engines: {node: '>=12'}
-    prepare: true
-    requiresBuild: true
-    dependencies:
-      '@rushstack/ts-command-line': 4.10.6
-      '@types/verror': 1.10.5
-      emittery: 0.10.0
-      fs-jetpack: 4.3.1
-      glob: 7.2.0
-      type-fest: 2.9.0
-      verror: 1.10.1
-    dev: false

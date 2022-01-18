@@ -47,7 +47,7 @@
     "pino-pretty": "^7.3.0",
     "reflect-metadata": "^0.1.13",
     "typescript": "^4.5.4",
-    "umzug": "github:sequelize/umzug"
+    "umzug": "^3.0.0"
   },
   "devDependencies": {
     "@types/convict": "6.1.1",

@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@ngneat/falso': ^2.5.1
+  '@ngneat/falso': 2.5.1
   '@sinclair/typebox': ^0.23.2
   '@types/convict': 6.1.1
   '@types/mocha': 9.0.0

@@ -1,8 +1,8 @@
 import { build } from '#app/app.js';
 import { initializeContainer } from '#app/container.js';
 import { USER_ROUTE } from '#app/modules/user/route.js';
+import { randUserName } from '@ngneat/falso';
 import expect from 'expect';
-import faker from 'faker';
 import { StatusCodes } from 'http-status-codes';
 
 const testContainer = await initializeContainer();
@@ -44,7 +44,7 @@ describe(`POST ${USER_ROUTE}`, () => {
       method: 'POST',
       url: USER_ROUTE,
       payload: {
-        username: faker.internet.userName(),
+        username: randUserName(),
       },
     });
 
@@ -56,7 +56,7 @@ describe(`POST ${USER_ROUTE}`, () => {
   });
 
   it('should error on duplciate username', async () => {
-    const username = faker.internet.userName();
+    const username = randUserName();
 
     await app.inject({
       method: 'POST',

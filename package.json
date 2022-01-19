@@ -49,8 +49,8 @@
     "umzug": "^3.0.0"
   },
   "devDependencies": {
+    "@ngneat/falso": "^2.5.1",
     "@types/convict": "6.1.1",
-    "@types/faker": "5.5.9",
     "@types/mocha": "9.0.0",
     "@types/node": "16.11.14",
     "@types/pino-http": "5.8.1",
@@ -64,7 +64,6 @@
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-prettier": "4.0.0",
     "expect": "27.4.6",
-    "faker": "5.5.3",
     "get-port": "6.0.0",
     "get-port-cli": "3.0.0",
     "mocha": "9.1.4",

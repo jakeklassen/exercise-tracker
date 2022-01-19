@@ -37,7 +37,7 @@ specifiers:
   nodemon: 2.0.15
   npm-run-all: 4.1.5
   pino-http: ^6.5.0
-  pino-pretty: ^7.3.0
+  pino-pretty: ^7.4.0
   prettier: 2.5.1
   reflect-metadata: ^0.1.13
   shx: 0.3.4
@@ -66,7 +66,7 @@ dependencies:
   monocle-ts: 2.3.12_fp-ts@2.11.8
   newtype-ts: 0.3.5_fp-ts@2.11.8+monocle-ts@2.3.12
   pino-http: 6.5.0
-  pino-pretty: 7.3.0
+  pino-pretty: 7.4.0
   reflect-metadata: 0.1.13
   typescript: 4.5.4
   umzug: 3.0.0
@@ -3119,8 +3119,8 @@ packages:
       pino-std-serializers: 5.0.0
     dev: false
 
-  /pino-pretty/7.3.0:
-    resolution: {integrity: sha512-HAhShJ2z2QzxXhYAn6XfwYpF13o1PQbjzSNA9q+30FAvhjOmeACit9lprhV/mCOw/8YFWSyyNk0YCq2EDYGYpw==}
+  /pino-pretty/7.4.0:
+    resolution: {integrity: sha512-4jERNvGogMIySUhCRPzn7TZm41A05XgW5gLBVUty1tIC6q1RmX6nmJgU92nVuiNK7yjm3dxJnWHebbok1QgzyQ==}
     hasBin: true
     dependencies:
       args: 5.0.1

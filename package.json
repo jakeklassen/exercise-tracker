@@ -33,7 +33,7 @@
     "change-case": "^4.1.2",
     "comment-json": "^4.1.0",
     "convict": "^6.2.1",
-    "fastify": "^3.26.0",
+    "fastify": "^3.27.0",
     "fp-ts": "^2.11.8",
     "http-status-codes": "^2.2.0",
     "io-ts": "^2.2.16",
@@ -51,7 +51,7 @@
   "devDependencies": {
     "@ngneat/falso": "2.5.1",
     "@types/convict": "6.1.1",
-    "@types/mocha": "9.0.0",
+    "@types/mocha": "9.1.0",
     "@types/node": "16.11.21",
     "@types/pino-http": "5.8.1",
     "@types/wtfnode": "0.7.0",

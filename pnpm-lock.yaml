@@ -16,7 +16,7 @@ specifiers:
   clipboardy: 3.0.0
   comment-json: ^4.1.0
   convict: ^6.2.1
-  dotenv: 14.2.0
+  dotenv: 14.3.0
   esbuild: 0.14.13
   eslint: 8.7.0
   eslint-config-prettier: 8.3.0
@@ -81,7 +81,7 @@ devDependencies:
   '@typescript-eslint/eslint-plugin': 5.10.1_0f442f6b60390429061d5d9b6bcaaba6
   '@typescript-eslint/parser': 5.10.1_eslint@8.7.0+typescript@4.5.5
   clipboardy: 3.0.0
-  dotenv: 14.2.0
+  dotenv: 14.3.0
   esbuild: 0.14.13
   eslint: 8.7.0
   eslint-config-prettier: 8.3.0_eslint@8.7.0
@@ -1171,8 +1171,8 @@ packages:
       is-obj: 2.0.0
     dev: true
 
-  /dotenv/14.2.0:
-    resolution: {integrity: sha512-05POuPJyPpO6jqzTNweQFfAyMSD4qa4lvsMOWyTRTdpHKy6nnnN+IYWaXF+lHivhBH/ufDKlR4IWCAN3oPnHuw==}
+  /dotenv/14.3.0:
+    resolution: {integrity: sha512-PCTcOQSXVo9FI1dB7AichJXMEvmiGCq0gnCpjfDUc8505uR+2MeLXWe+Ue4PN5UXa2isHSa78sr7L59fk+2mnQ==}
     engines: {node: '>=12'}
     dev: true
 

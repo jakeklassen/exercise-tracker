@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@ngneat/falso': 2.25.1
-  '@sinclair/typebox': ^0.23.3
+  '@sinclair/typebox': ^0.23.4
   '@types/convict': 6.1.1
   '@types/mocha': 9.1.0
   '@types/node': 16.11.25
@@ -31,7 +31,7 @@ specifiers:
   json-schema-to-typescript: ^10.1.5
   mocha: 9.2.0
   mongodb: ^4.3.1
-  mongoose: ^6.2.1
+  mongoose: ^6.2.2
   monocle-ts: ^2.3.12
   newtype-ts: ^0.3.5
   nodemon: 2.0.15
@@ -50,7 +50,7 @@ specifiers:
   wtfnode: 0.9.1
 
 dependencies:
-  '@sinclair/typebox': 0.23.3
+  '@sinclair/typebox': 0.23.4
   awilix: 6.1.0
   bson: 4.6.1
   change-case: 4.1.2
@@ -62,7 +62,7 @@ dependencies:
   io-ts: 2.2.16_fp-ts@2.11.8
   json-schema-to-typescript: 10.1.5
   mongodb: 4.3.1
-  mongoose: 6.2.1
+  mongoose: 6.2.2
   monocle-ts: 2.3.12_fp-ts@2.11.8
   newtype-ts: 0.3.5_fp-ts@2.11.8+monocle-ts@2.3.12
   pino-http: 6.6.0
@@ -231,8 +231,8 @@ packages:
       string-argv: 0.3.1
     dev: false
 
-  /@sinclair/typebox/0.23.3:
-    resolution: {integrity: sha512-zIjVOx3n08kLSAE6o4BhOUtgkpvbrZmR6B+lJLl/tP78GB7KpLrOK15FC9sKaWZHLtnObIDAQV5kihLbisgYYw==}
+  /@sinclair/typebox/0.23.4:
+    resolution: {integrity: sha512-0/WqSvpVbCBAV1yPeko7eAczKbs78dNVAaX14quVlwOb2wxfKuXCx91h4NrEfkYK9zEnyVSW4JVI/trP3iS+Qg==}
     dev: false
 
   /@sindresorhus/is/0.14.0:
@@ -2481,8 +2481,8 @@ packages:
     resolution: {integrity: sha1-Epai1Y/UXxmg9s4B1lcB4sc1tus=}
     dev: false
 
-  /kareem/2.3.3:
-    resolution: {integrity: sha512-uESCXM2KdtOQ8LOvKyTUXEeg0MkYp4wGglTIpGcYHvjJcS5sn2Wkfrfit8m4xSbaNDAw2KdI9elgkOxZbrFYbg==}
+  /kareem/2.3.4:
+    resolution: {integrity: sha512-Vcrt8lcpVl0s8ePx634BxwRqmFo+5DcOhlmNadehxreMTIQi/9hOL/B3hZQQbK5DgMS7Lem3xABXV7/S3jy+7g==}
     dev: false
 
   /keyv/3.1.0:
@@ -2758,12 +2758,12 @@ packages:
       saslprep: 1.0.3
     dev: false
 
-  /mongoose/6.2.1:
-    resolution: {integrity: sha512-VxY1wvlc4uBQKyKNVDoEkTU3/ayFOD//qVXYP+sFyvTRbAj9/M53UWTERd84pWogs2TqAC6DTvZbxCs2LoOd3Q==}
+  /mongoose/6.2.2:
+    resolution: {integrity: sha512-uiWCPydp83OdVQjp6rMCwB/CbITUbGlisGt1BdlYUDQJzPJVIxeojQXuors8coSeB2HnZrULHrLcm4FP106ehA==}
     engines: {node: '>=12.0.0'}
     dependencies:
       bson: 4.6.1
-      kareem: 2.3.3
+      kareem: 2.3.4
       mongodb: 4.3.1
       mpath: 0.8.4
       mquery: 4.0.2

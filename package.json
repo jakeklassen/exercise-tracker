@@ -61,7 +61,7 @@
     "dotenv": "16.0.0",
     "esbuild": "0.14.23",
     "eslint": "8.9.0",
-    "eslint-config-prettier": "8.3.0",
+    "eslint-config-prettier": "8.4.0",
     "eslint-plugin-prettier": "4.0.0",
     "expect": "27.5.1",
     "get-port": "6.1.0",

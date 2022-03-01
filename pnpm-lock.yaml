@@ -43,7 +43,7 @@ specifiers:
   shx: 0.3.4
   tiny-glob: 0.2.9
   ts-mockito: 2.6.1
-  ts-node: 10.5.0
+  ts-node: 10.6.0
   tsm: 2.2.1
   typescript: ^4.5.5
   umzug: ^3.0.0
@@ -96,7 +96,7 @@ devDependencies:
   shx: 0.3.4
   tiny-glob: 0.2.9
   ts-mockito: 2.6.1
-  ts-node: 10.5.0_f94da96e4d78a751cdd66b59796b8fdd
+  ts-node: 10.6.0_f94da96e4d78a751cdd66b59796b8fdd
   tsm: 2.2.1
   wtfnode: 0.9.1
 
@@ -3853,8 +3853,8 @@ packages:
       lodash: 4.17.21
     dev: true
 
-  /ts-node/10.5.0_f94da96e4d78a751cdd66b59796b8fdd:
-    resolution: {integrity: sha512-6kEJKwVxAJ35W4akuiysfKwKmjkbYxwQMTBaAxo9KKAx/Yd26mPUyhGz3ji+EsJoAgrLqVsYHNuuYwQe22lbtw==}
+  /ts-node/10.6.0_f94da96e4d78a751cdd66b59796b8fdd:
+    resolution: {integrity: sha512-CJen6+dfOXolxudBQXnVjRVvYTmTWbyz7cn+xq2XTsvnaXbHqr4gXSCNbS2Jj8yTZMuGwUoBESLaOkLascVVvg==}
     hasBin: true
     peerDependencies:
       '@swc/core': '>=1.2.50'

@@ -27,7 +27,7 @@ jobs:
         run: apk add --no-cache git
 
       - name: Check out repository code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Cache pnpm modules
         uses: actions/cache@v2

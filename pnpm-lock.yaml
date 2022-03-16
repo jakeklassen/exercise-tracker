@@ -10,7 +10,7 @@ specifiers:
   '@types/wtfnode': 0.7.0
   '@typescript-eslint/eslint-plugin': 5.15.0
   '@typescript-eslint/parser': 5.15.0
-  awilix: ^6.1.0
+  awilix: ^7.0.0
   bson: ^4.6.1
   change-case: ^4.1.2
   clipboardy: 3.0.0
@@ -51,7 +51,7 @@ specifiers:
 
 dependencies:
   '@sinclair/typebox': 0.23.4
-  awilix: 6.1.0
+  awilix: 7.0.0
   bson: 4.6.1
   change-case: 4.1.2
   comment-json: 4.2.2
@@ -671,8 +671,8 @@ packages:
       - supports-color
     dev: false
 
-  /awilix/6.1.0:
-    resolution: {integrity: sha512-hFT47lS6t4eHoZ4ddojmoab2eDjBK9OyVDANFHaSLkFW4kJVlL4AE4O7oE4lX6FW8RveAbAyAfHQ7Ar9re15Xw==}
+  /awilix/7.0.0:
+    resolution: {integrity: sha512-Ye4SLwqVfrsHSRRT6OmxvJjmnKryWzvEUdKEgnq/wODkYsV1Yo+L2k0aHEj5WhPyDym17hCRBxJn5whXWhU2Tw==}
     engines: {node: '>=12.0.0'}
     dependencies:
       camel-case: 4.1.2

@@ -43,13 +43,13 @@ jobs:
           run_install: true
 
       - name: Build
-        run: yarn build
+        run: pnpm run build
 
       - name: Type Check
-        run: yarn typecheck
+        run: pnpm run typecheck
 
       - name: Test
-        run: yarn test
+        run: pnpm run test
         env:
           MONGO_URL: mongodb://tantor:elephant@mongo:27017/tantor-test?authSource=admin
           MONGO_DB: tantor-test

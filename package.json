@@ -7,11 +7,11 @@
   "type": "module",
   "scripts": {
     "clean": "shx rm -rf dist",
-    "prebuild": "yarn run clean",
+    "prebuild": "pnpm run clean",
     "build": "node --loader tsm src/build.ts",
     "build:only": "node --loader tsm src/build.ts",
     "compile-schemas": "json2ts -i src/schemas -o src/types",
-    "premigrate": "yarn build",
+    "premigrate": "pnpm run build",
     "migrate": "node -r dotenv/config dist/migrate.js",
     "watch": "tsc --watch",
     "start": "nodemon",

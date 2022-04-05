@@ -1,5 +1,5 @@
 {
-  "name": "timestamp-microservice-fastify-ts",
+  "name": "fcc-exercise-tracker",
   "version": "1.0.0",
   "main": "dist/index.js",
   "author": "Jake Klassen",

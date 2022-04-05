@@ -18,8 +18,6 @@ app.listen(port, () => {
 
 const cleanup = async () => {
   await app.close();
-
-  // await container.cradle.database.then((db) => db.close());
   await container.dispose();
 
   process.exit(0);

@@ -1,3 +1,6 @@
+/**
+ * @type {import('eslint').Linter.Config}
+ */
 module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
@@ -20,14 +23,7 @@ module.exports = {
     'prettier',
   ],
   rules: {
-    'prettier/prettier': [
-      'error',
-      {
-        semi: true,
-        singleQuote: true,
-        trailingComma: 'all',
-      },
-    ],
+    'prettier/prettier': 'error',
     '@typescript-eslint/camelcase': ['off'],
   },
 };

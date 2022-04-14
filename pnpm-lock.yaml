@@ -31,7 +31,7 @@ specifiers:
   json-schema-to-typescript: ^10.1.5
   mocha: 9.2.2
   mongodb: ^4.5.0
-  mongoose: 6.2.10
+  mongoose: 6.3.0
   monocle-ts: ^2.3.13
   newtype-ts: ^0.3.5
   nodemon: 2.0.15
@@ -61,7 +61,7 @@ dependencies:
   io-ts: 2.2.16_fp-ts@2.11.9
   json-schema-to-typescript: 10.1.5
   mongodb: 4.5.0
-  mongoose: 6.2.10
+  mongoose: 6.3.0
   monocle-ts: 2.3.13_fp-ts@2.11.9
   newtype-ts: 0.3.5_fp-ts@2.11.9+monocle-ts@2.3.13
   pino-http: 6.6.0
@@ -2754,18 +2754,6 @@ packages:
       whatwg-url: 11.0.0
     dev: false
 
-  /mongodb/4.3.1:
-    resolution: {integrity: sha512-sNa8APSIk+r4x31ZwctKjuPSaeKuvUeNb/fu/3B6dRM02HpEgig7hTHM8A/PJQTlxuC/KFWlDlQjhsk/S43tBg==}
-    engines: {node: '>=12.9.0'}
-    dependencies:
-      bson: 4.6.2
-      denque: 2.0.1
-      mongodb-connection-string-url: 2.5.2
-      socks: 2.6.2
-    optionalDependencies:
-      saslprep: 1.0.3
-    dev: false
-
   /mongodb/4.5.0:
     resolution: {integrity: sha512-A2l8MjEpKojnhbCM0MK3+UOGUSGvTNNSv7AkP1fsT7tkambrkkqN/5F2y+PhzsV0Nbv58u04TETpkaSEdI2zKA==}
     engines: {node: '>=12.9.0'}
@@ -2778,13 +2766,13 @@ packages:
       saslprep: 1.0.3
     dev: false
 
-  /mongoose/6.2.10:
-    resolution: {integrity: sha512-Yp+6UH5M0AlxAVGdC2/Deq0St+2qW73oKCnhJDr83bOZ12eflTLTT5uQF0p6KzvtFj86XWbq/7ApvO4yW6h1sA==}
+  /mongoose/6.3.0:
+    resolution: {integrity: sha512-3x2pEGlZ5SorqcL0/hmUIAzzHIh6a/VIAEv3zAmc93qDtSz3WBbF8PwYYHcXm6Awfck9/zFOV9KIUEE+HjVepA==}
     engines: {node: '>=12.0.0'}
     dependencies:
       bson: 4.6.2
       kareem: 2.3.5
-      mongodb: 4.3.1
+      mongodb: 4.5.0
       mpath: 0.8.4
       mquery: 4.0.2
       ms: 2.1.3

@@ -23,9 +23,6 @@ jobs:
           - 27017:27017
 
     steps:
-      - name: Install git
-        run: apk add --no-cache git
-
       - name: Check out repository code
         uses: actions/checkout@v3
 

@@ -4,7 +4,7 @@ import { USER_EXERCISE_CREATE_ROUTE } from '#app/modules/user-exercise/user-exer
 import { USER_ROUTE } from '#app/modules/user/route.js';
 import { User } from '#app/modules/user/user.model.js';
 import { randUserName } from '@ngneat/falso';
-import expect from 'expect';
+import { expect } from 'expect';
 import { StatusCodes } from 'http-status-codes';
 import { ObjectId } from 'mongodb';
 

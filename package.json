@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@sinclair/typebox": "^0.23.5",
-    "awilix": "^7.0.2",
+    "awilix": "^7.0.3",
     "bson": "^4.6.3",
     "change-case": "^4.1.2",
     "comment-json": "^4.2.2",
@@ -64,7 +64,7 @@
     "eslint": "8.14.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-prettier": "4.0.0",
-    "expect": "27.5.1",
+    "expect": "28.0.2",
     "get-port": "6.1.2",
     "get-port-cli": "3.0.0",
     "mocha": "10.0.0",

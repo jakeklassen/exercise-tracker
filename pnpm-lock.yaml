@@ -15,7 +15,7 @@ specifiers:
   change-case: ^4.1.2
   clipboardy: 3.0.0
   comment-json: ^4.2.2
-  convict: ^6.2.2
+  convict: ^6.2.3
   dotenv: 16.0.0
   esbuild: 0.14.38
   eslint: 8.15.0
@@ -54,7 +54,7 @@ dependencies:
   bson: 4.6.3
   change-case: 4.1.2
   comment-json: 4.2.2
-  convict: 6.2.2
+  convict: 6.2.3
   fastify: 3.29.0
   fp-ts: 2.12.1
   http-status-codes: 2.2.0
@@ -991,8 +991,8 @@ packages:
       upper-case: 2.0.2
     dev: false
 
-  /convict/6.2.2:
-    resolution: {integrity: sha512-3MsROJiEFN3BAzeFit1t87t7EUFzd44MNd13MLSikV2dsnDl7znwKgtYPPONtnDzxiDW0nBAsxVhSRNrjUrTTg==}
+  /convict/6.2.3:
+    resolution: {integrity: sha512-mTY04Qr7WrqiXifdeUYXr4/+Te4hPFWDvz6J2FVIKCLc2XBhq63VOSSYAKJ+unhZAYOAjmEdNswTOeHt7s++pQ==}
     engines: {node: '>=6'}
     dependencies:
       lodash.clonedeep: 4.5.0

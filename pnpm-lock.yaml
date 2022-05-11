@@ -5,7 +5,7 @@ specifiers:
   '@sinclair/typebox': ^0.23.5
   '@types/convict': 6.1.1
   '@types/mocha': 9.1.1
-  '@types/node': 16.11.33
+  '@types/node': 16.11.34
   '@types/pino-http': 5.8.1
   '@types/wtfnode': 0.7.0
   '@typescript-eslint/eslint-plugin': 5.23.0
@@ -74,7 +74,7 @@ devDependencies:
   '@ngneat/falso': 5.2.1
   '@types/convict': 6.1.1
   '@types/mocha': 9.1.1
-  '@types/node': 16.11.33
+  '@types/node': 16.11.34
   '@types/pino-http': 5.8.1
   '@types/wtfnode': 0.7.0
   '@typescript-eslint/eslint-plugin': 5.23.0_c63nfttrfhylg3zmgcxfslaw44
@@ -94,7 +94,7 @@ devDependencies:
   prettier: 2.6.2
   shx: 0.3.4
   tiny-glob: 0.2.9
-  ts-node: 10.7.0_7vfv75elicf7ijnl73ckmqo2cm
+  ts-node: 10.7.0_jufkpc4gvojranilfpdhgxxyui
   tsm: 2.2.1
   wtfnode: 0.9.1
 
@@ -205,7 +205,7 @@ packages:
       '@jest/schemas': 28.0.2
       '@types/istanbul-lib-coverage': 2.0.4
       '@types/istanbul-reports': 3.0.1
-      '@types/node': 16.11.33
+      '@types/node': 16.11.34
       '@types/yargs': 17.0.10
       chalk: 4.1.2
     dev: true
@@ -286,14 +286,14 @@ packages:
   /@types/convict/6.1.1:
     resolution: {integrity: sha512-R+JLaTvhsD06p4jyjUDtbd5xMtZTRE3c0iI+lrFWZogSVEjgTWPYwvJPVf+t92E+yrlbXa4X4Eg9ro6gPdUt4w==}
     dependencies:
-      '@types/node': 16.11.33
+      '@types/node': 16.11.34
     dev: true
 
   /@types/glob/7.2.0:
     resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
     dependencies:
       '@types/minimatch': 3.0.5
-      '@types/node': 16.11.33
+      '@types/node': 16.11.34
     dev: false
 
   /@types/istanbul-lib-coverage/2.0.4:
@@ -322,7 +322,7 @@ packages:
   /@types/keyv/3.1.4:
     resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==}
     dependencies:
-      '@types/node': 16.11.33
+      '@types/node': 16.11.34
     dev: true
 
   /@types/lodash/4.14.177:
@@ -341,8 +341,8 @@ packages:
     resolution: {integrity: sha512-Z61JK7DKDtdKTWwLeElSEBcWGRLY8g95ic5FoQqI9CMx0ns/Ghep3B4DfcEimiKMvtamNVULVNKEsiwV3aQmXw==}
     dev: true
 
-  /@types/node/16.11.33:
-    resolution: {integrity: sha512-0PJ0vg+JyU0MIan58IOIFRtSvsb7Ri+7Wltx2qAg94eMOrpg4+uuP3aUHCpxXc1i0jCXiC+zIamSZh3l9AbcQA==}
+  /@types/node/16.11.34:
+    resolution: {integrity: sha512-UrWGDyLAlQ2Z8bNOGWTsqbP9ZcBeTYBVuTRNxXTztBy5KhWUFI3BaeDWoCP/CzV/EVGgO1NTYzv9ZytBI9GAEw==}
 
   /@types/normalize-package-data/2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
@@ -363,13 +363,13 @@ packages:
   /@types/pino-std-serializers/2.4.1:
     resolution: {integrity: sha512-17XcksO47M24IVTVKPeAByWUd3Oez7EbIjXpSbzMPhXVzgjGtrOa49gKBwxH9hb8dKv58OelsWQ+A1G1l9S3wQ==}
     dependencies:
-      '@types/node': 16.11.33
+      '@types/node': 16.11.34
     dev: true
 
   /@types/pino/6.3.12:
     resolution: {integrity: sha512-dsLRTq8/4UtVSpJgl9aeqHvbh6pzdmjYD3C092SYgLD2TyoCqHpTJk6vp8DvCTGGc7iowZ2MoiYiVUUCcu7muw==}
     dependencies:
-      '@types/node': 16.11.33
+      '@types/node': 16.11.34
       '@types/pino-pretty': 4.7.2
       '@types/pino-std-serializers': 2.4.1
       sonic-boom: 2.3.1
@@ -382,7 +382,7 @@ packages:
   /@types/responselike/1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
     dependencies:
-      '@types/node': 16.11.33
+      '@types/node': 16.11.34
     dev: true
 
   /@types/stack-utils/2.0.1:
@@ -396,7 +396,7 @@ packages:
   /@types/whatwg-url/8.2.1:
     resolution: {integrity: sha512-2YubE1sjj5ifxievI5Ge1sckb9k/Er66HyR2c+3+I6VDUUg1TLPdYYTEbQ+DjRkS4nTxMJhgWfSfMRD2sl2EYQ==}
     dependencies:
-      '@types/node': 16.11.33
+      '@types/node': 16.11.34
       '@types/webidl-conversions': 6.1.1
     dev: false
 
@@ -2426,7 +2426,7 @@ packages:
     engines: {node: ^12.13.0 || ^14.15.0 || ^16.10.0 || >=17.0.0}
     dependencies:
       '@jest/types': 28.1.0
-      '@types/node': 16.11.33
+      '@types/node': 16.11.34
       chalk: 4.1.2
       ci-info: 3.3.0
       graceful-fs: 4.2.10
@@ -3903,7 +3903,7 @@ packages:
     engines: {node: '>=12'}
     dev: true
 
-  /ts-node/10.7.0_7vfv75elicf7ijnl73ckmqo2cm:
+  /ts-node/10.7.0_jufkpc4gvojranilfpdhgxxyui:
     resolution: {integrity: sha512-TbIGS4xgJoX2i3do417KSaep1uRAW/Lu+WAL2doDHC0D6ummjirVOXU5/7aiZotbQ5p1Zp9tP7U6cYhA0O7M8A==}
     hasBin: true
     peerDependencies:
@@ -3922,7 +3922,7 @@ packages:
       '@tsconfig/node12': 1.0.9
       '@tsconfig/node14': 1.0.1
       '@tsconfig/node16': 1.0.2
-      '@types/node': 16.11.33
+      '@types/node': 16.11.34
       acorn: 8.7.0
       acorn-walk: 8.2.0
       arg: 4.1.3

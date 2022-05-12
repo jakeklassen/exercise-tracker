@@ -30,7 +30,7 @@ specifiers:
   io-ts: ^2.2.16
   json-schema-to-typescript: ^10.1.5
   mocha: 10.0.0
-  mongodb: ^4.5.0
+  mongodb: ^4.6.0
   mongoose: 6.3.3
   monocle-ts: ^2.3.13
   newtype-ts: ^0.3.5
@@ -60,7 +60,7 @@ dependencies:
   http-status-codes: 2.2.0
   io-ts: 2.2.16_fp-ts@2.12.1
   json-schema-to-typescript: 10.1.5
-  mongodb: 4.5.0
+  mongodb: 4.6.0
   mongoose: 6.3.3
   monocle-ts: 2.3.13_fp-ts@2.12.1
   newtype-ts: 0.3.5_ffryne6c66bs4ls22egoldhoqy
@@ -2187,8 +2187,8 @@ packages:
       fp-ts: 2.12.1
     dev: false
 
-  /ip/1.1.5:
-    resolution: {integrity: sha1-vd7XARQpCCjAoDnnLvJfWq7ENUo=}
+  /ip/1.1.8:
+    resolution: {integrity: sha512-PuExPYUiu6qMBQb4l06ecm6T6ujzhmh+MeJcW9wa89PoAz5pvd4zPgN5WJV104mb6S2T1AwNIAaB70JNrLQWhg==}
     dev: false
 
   /ipaddr.js/1.9.1:
@@ -2787,6 +2787,18 @@ packages:
 
   /mongodb/4.5.0:
     resolution: {integrity: sha512-A2l8MjEpKojnhbCM0MK3+UOGUSGvTNNSv7AkP1fsT7tkambrkkqN/5F2y+PhzsV0Nbv58u04TETpkaSEdI2zKA==}
+    engines: {node: '>=12.9.0'}
+    dependencies:
+      bson: 4.6.3
+      denque: 2.0.1
+      mongodb-connection-string-url: 2.5.2
+      socks: 2.6.2
+    optionalDependencies:
+      saslprep: 1.0.3
+    dev: false
+
+  /mongodb/4.6.0:
+    resolution: {integrity: sha512-1gsxVXmjFTPJ+CkMG9olE4bcVsyY8lBJN9m5B5vj+LZ7wkBqq3PO8RVmNX9GwCBOBz1KV0zM00vPviUearSv7A==}
     engines: {node: '>=12.9.0'}
     dependencies:
       bson: 4.6.3
@@ -3648,7 +3660,7 @@ packages:
     resolution: {integrity: sha512-zDZhHhZRY9PxRruRMR7kMhnf3I8hDs4S3f9RecfnGxvcBHQcKcIH/oUcEWffsfl1XxdYlA7nnlGbbTvPz9D8gA==}
     engines: {node: '>= 10.13.0', npm: '>= 3.0.0'}
     dependencies:
-      ip: 1.1.5
+      ip: 1.1.8
       smart-buffer: 4.2.0
     dev: false
 

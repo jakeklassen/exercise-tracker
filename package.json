@@ -53,7 +53,7 @@
     "@ngneat/falso": "5.3.0",
     "@types/convict": "6.1.1",
     "@types/mocha": "9.1.1",
-    "@types/node": "16.11.34",
+    "@types/node": "16.11.35",
     "@types/pino-http": "5.8.1",
     "@types/wtfnode": "0.7.0",
     "@typescript-eslint/eslint-plugin": "5.23.0",

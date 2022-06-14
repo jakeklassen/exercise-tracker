@@ -43,7 +43,7 @@
     "mongoose": "6.3.8",
     "monocle-ts": "^2.3.13",
     "newtype-ts": "^0.3.5",
-    "pino-http": "^7.0.0",
+    "pino-http": "^8.0.0",
     "pino-pretty": "^8.0.0",
     "reflect-metadata": "^0.1.13",
     "typescript": "^4.6.4",

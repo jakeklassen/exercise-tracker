@@ -50,7 +50,7 @@
     "umzug": "^3.1.1"
   },
   "devDependencies": {
-    "@ngneat/falso": "5.7.0",
+    "@ngneat/falso": "6.0.0",
     "@types/convict": "6.1.1",
     "@types/mocha": "9.1.1",
     "@types/node": "18.0.0",

@@ -10,7 +10,7 @@ declare module '#app/container.js' {
 interface Exercise {
   description: string;
   duration: number;
-  date: string;
+  date?: string;
 }
 
 const exerciseSchema = new mongoose.Schema<Exercise>(

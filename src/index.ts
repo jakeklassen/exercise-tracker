@@ -1,12 +1,18 @@
 import { build } from '#app/app.js';
 import { initializeContainer } from '#app/container.js';
+import pino from 'pino';
 
 const { app, container } = build({
   container: await initializeContainer(),
   fastifyServerOptions: {
-    logger: {
-      prettyPrint: true,
-    },
+    logger: pino({
+      transport: {
+        target: 'pino-pretty',
+        options: {
+          colorize: true,
+        },
+      },
+    }),
   },
 });
 

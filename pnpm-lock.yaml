@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@ngneat/falso': 6.0.1
-  '@sinclair/typebox': ^0.24.0
+  '@sinclair/typebox': ^0.24.1
   '@types/convict': 6.1.1
   '@types/mocha': 9.1.1
   '@types/node': 18.0.0
@@ -49,7 +49,7 @@ specifiers:
   wtfnode: 0.9.1
 
 dependencies:
-  '@sinclair/typebox': 0.24.0
+  '@sinclair/typebox': 0.24.1
   awilix: 7.0.3
   bson: 4.6.4
   change-case: 4.1.2
@@ -262,8 +262,8 @@ packages:
     resolution: {integrity: sha512-AFBVi/iT4g20DHoujvMH1aEDn8fGJh4xsRGCP6d8RpLPMqsNPvW01Jcn0QysXTsg++/xj25NmJsGyH9xug/wKg==}
     dev: true
 
-  /@sinclair/typebox/0.24.0:
-    resolution: {integrity: sha512-UsOG+42zjQrmAAdxXitRI43fUYNwef9bq5jSwWKOe9q0NWrR1zkWe1ceXSYwuf3tkC7rJitiT0kHWMkCKiSfzA==}
+  /@sinclair/typebox/0.24.1:
+    resolution: {integrity: sha512-v59jW0KQIy4iMP0Pn7gcpQ48YDXa9vOopsRhaPWmsStTxaVNYIqFY3eK6y4PU+53hlQoaQ8pAxU4cPIaMFEJwg==}
     dev: false
 
   /@sindresorhus/is/0.14.0:

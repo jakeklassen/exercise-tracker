@@ -63,7 +63,7 @@
     "esbuild": "0.14.47",
     "eslint": "8.18.0",
     "eslint-config-prettier": "8.5.0",
-    "eslint-plugin-prettier": "4.1.0",
+    "eslint-plugin-prettier": "4.2.1",
     "expect": "28.1.1",
     "get-port": "6.1.2",
     "get-port-cli": "3.0.0",

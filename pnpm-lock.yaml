@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@ngneat/falso': 6.0.2
-  '@sinclair/typebox': ^0.24.1
+  '@sinclair/typebox': ^0.24.5
   '@types/convict': 6.1.1
   '@types/mocha': 9.1.1
   '@types/node': 18.0.0
@@ -30,7 +30,7 @@ specifiers:
   json-schema-to-typescript: 11.0.1
   mocha: 10.0.0
   mongodb: ^4.7.0
-  mongoose: 6.4.1
+  mongoose: 6.4.2
   monocle-ts: ^2.3.13
   newtype-ts: ^0.3.5
   nodemon: 2.0.18
@@ -49,7 +49,7 @@ specifiers:
   wtfnode: 0.9.1
 
 dependencies:
-  '@sinclair/typebox': 0.24.1
+  '@sinclair/typebox': 0.24.5
   awilix: 7.0.3
   bson: 4.6.4
   change-case: 4.1.2
@@ -61,7 +61,7 @@ dependencies:
   io-ts: 2.2.16_fp-ts@2.12.1
   json-schema-to-typescript: 11.0.1
   mongodb: 4.7.0
-  mongoose: 6.4.1
+  mongoose: 6.4.2
   monocle-ts: 2.3.13_fp-ts@2.12.1
   newtype-ts: 0.3.5_ffryne6c66bs4ls22egoldhoqy
   pino: 8.1.0
@@ -262,8 +262,8 @@ packages:
     resolution: {integrity: sha512-AFBVi/iT4g20DHoujvMH1aEDn8fGJh4xsRGCP6d8RpLPMqsNPvW01Jcn0QysXTsg++/xj25NmJsGyH9xug/wKg==}
     dev: true
 
-  /@sinclair/typebox/0.24.1:
-    resolution: {integrity: sha512-v59jW0KQIy4iMP0Pn7gcpQ48YDXa9vOopsRhaPWmsStTxaVNYIqFY3eK6y4PU+53hlQoaQ8pAxU4cPIaMFEJwg==}
+  /@sinclair/typebox/0.24.5:
+    resolution: {integrity: sha512-Te3ZdSGjvNg9knge4ZvHpAn4Pjr5jV1GfKKWJtZzWtyDB0tIWIVVJLqaD0sXFyWqFnKKzjzFsRbDRvd/5ejawQ==}
     dev: false
 
   /@sindresorhus/is/0.14.0:
@@ -2802,8 +2802,8 @@ packages:
       saslprep: 1.0.3
     dev: false
 
-  /mongoose/6.4.1:
-    resolution: {integrity: sha512-6a3UmHaC2BYdxZT7qqwORqbxDfAa5HaRMidkA8Ll4Rupnl6R8vRu5Av13jx4DaxgJBpPDo4/K9AXxb+OGSD+5w==}
+  /mongoose/6.4.2:
+    resolution: {integrity: sha512-VRotms+XC42vPlS3Tr2GTg0qkppHzWob62sUjdC22ir8aqWVrbCsHjEuMsL6zZlKSIj8zNBODm9hRV+RHRiLRQ==}
     engines: {node: '>=12.0.0'}
     dependencies:
       bson: 4.6.4

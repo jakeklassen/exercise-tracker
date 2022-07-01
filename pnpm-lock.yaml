@@ -27,7 +27,7 @@ specifiers:
   get-port-cli: 3.0.0
   http-status-codes: ^2.2.0
   io-ts: ^2.2.16
-  json-schema-to-typescript: 11.0.0
+  json-schema-to-typescript: 11.0.1
   mocha: 10.0.0
   mongodb: ^4.7.0
   mongoose: 6.4.1
@@ -59,7 +59,7 @@ dependencies:
   fp-ts: 2.12.1
   http-status-codes: 2.2.0
   io-ts: 2.2.16_fp-ts@2.12.1
-  json-schema-to-typescript: 11.0.0
+  json-schema-to-typescript: 11.0.1
   mongodb: 4.7.0
   mongoose: 6.4.1
   monocle-ts: 2.3.13_fp-ts@2.12.1
@@ -2474,12 +2474,12 @@ packages:
     resolution: {integrity: sha512-xyFwyhro/JEof6Ghe2iz2NcXoj2sloNsWr/XsERDK/oiPCfaNhl5ONfp+jQdAZRQQ0IJWNzH9zIZF7li91kh2w==}
     dev: true
 
-  /json-schema-to-typescript/11.0.0:
-    resolution: {integrity: sha512-WT1yk6J6MOAEWn+Y8czd0vgWXmBuFDl0Qvc/DEQiS2jjSOfMt07d8BwS2Q2YAEOk53PNWwuXqmV+pih0gWoUpA==}
+  /json-schema-to-typescript/11.0.1:
+    resolution: {integrity: sha512-iQFEErdr9PWQUN3kLvaFFdgWAfwBeqH3PMzxza4NpSU/8uadwHKKi66Hgu5Rb3NeVSk85xkwTYIeuah+R0ASeA==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
-      '@apidevtools/json-schema-ref-parser': github.com/bcherny/json-schema-ref-parser/984282d3
+      '@apidevtools/json-schema-ref-parser': github.com/bcherny/json-schema-ref-parser/984282d34a2993e5243aa35100fe32a63699164d
       '@types/json-schema': 7.0.11
       '@types/lodash': 4.14.182
       '@types/prettier': 2.6.3
@@ -4206,8 +4206,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  github.com/bcherny/json-schema-ref-parser/984282d3:
-    resolution: {tarball: https://codeload.github.com/bcherny/json-schema-ref-parser/tar.gz/984282d3}
+  github.com/bcherny/json-schema-ref-parser/984282d34a2993e5243aa35100fe32a63699164d:
+    resolution: {tarball: https://codeload.github.com/bcherny/json-schema-ref-parser/tar.gz/984282d34a2993e5243aa35100fe32a63699164d}
     name: '@apidevtools/json-schema-ref-parser'
     version: 0.0.0-dev
     dependencies:

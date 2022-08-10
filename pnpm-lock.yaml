@@ -37,7 +37,7 @@ specifiers:
   npm-run-all: 4.1.5
   pino: 8.4.0
   pino-http: ^8.1.1
-  pino-pretty: ^8.1.0
+  pino-pretty: ^9.0.0
   prettier: 2.7.1
   reflect-metadata: ^0.1.13
   shx: 0.3.4
@@ -66,7 +66,7 @@ dependencies:
   newtype-ts: 0.3.5_4grr3t76qfujgbwv2dpf633gum
   pino: 8.4.0
   pino-http: 8.1.1
-  pino-pretty: 8.1.0
+  pino-pretty: 9.0.0
   reflect-metadata: 0.1.13
   typescript: 4.7.4
   umzug: 3.1.1
@@ -2968,10 +2968,6 @@ packages:
       object-keys: 1.1.1
     dev: true
 
-  /on-exit-leak-free/1.0.0:
-    resolution: {integrity: sha512-Ve8ubhrXRdnuCJ5bQSQpP3uaV43K1PMcOfSRC1pqHgRZommXCgsXwh08jVC5NpjwScE23BPDwDvVg4cov3mwjw==}
-    dev: false
-
   /on-exit-leak-free/2.1.0:
     resolution: {integrity: sha512-VuCaZZAjReZ3vUwgOB8LxAosIurDiAW0s13rI1YwmaP++jvcxP77AWoQvenZebpCA2m8WC1/EosPYPMjnRAp/w==}
     dev: false
@@ -3127,8 +3123,8 @@ packages:
       process-warning: 2.0.0
     dev: false
 
-  /pino-pretty/8.1.0:
-    resolution: {integrity: sha512-oKfI8qKXR2a3haHs/X8iB6QSnWLqoOGAjwxIAXem4+XOGIGNw7IKpozId1uE7j89Rj46HIfWnGbAgmQmr8+yRw==}
+  /pino-pretty/9.0.0:
+    resolution: {integrity: sha512-WcojVUw8aJQz0in90xj7nQo5g14d9bLkBnE80P/Sk8JxNilbtyXp9mNjRcF07uOBEoNMrdkBniv8Tu1Lale7Kw==}
     hasBin: true
     dependencies:
       colorette: 2.0.19
@@ -3138,12 +3134,12 @@ packages:
       help-me: 4.0.1
       joycon: 3.1.1
       minimist: 1.2.6
-      on-exit-leak-free: 1.0.0
+      on-exit-leak-free: 2.1.0
       pino-abstract-transport: 1.0.0
       pump: 3.0.0
       readable-stream: 4.0.0
       secure-json-parse: 2.4.0
-      sonic-boom: 3.0.0
+      sonic-boom: 3.1.0
       strip-json-comments: 3.1.1
     dev: false
 
@@ -3558,12 +3554,6 @@ packages:
     dependencies:
       ip: 2.0.0
       smart-buffer: 4.2.0
-    dev: false
-
-  /sonic-boom/3.0.0:
-    resolution: {integrity: sha512-p5DiZOZHbJ2ZO5MADczp5qrfOd3W5Vr2vHxfCpe7G4AzPwVOweIjbfgku8wSQUuk+Y5Yuo8W7JqRe6XKmKistg==}
-    dependencies:
-      atomic-sleep: 1.0.0
     dev: false
 
   /sonic-boom/3.1.0:

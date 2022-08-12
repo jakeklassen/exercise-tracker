@@ -60,7 +60,7 @@
     "@typescript-eslint/parser": "5.33.0",
     "clipboardy": "3.0.0",
     "dotenv": "16.0.1",
-    "esbuild": "0.15.1",
+    "esbuild": "0.15.2",
     "eslint": "8.21.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-prettier": "4.2.1",

@@ -40,7 +40,7 @@
     "io-ts": "^2.2.16",
     "json-schema-to-typescript": "11.0.2",
     "mongodb": "^4.8.1",
-    "mongoose": "6.5.2",
+    "mongoose": "6.5.3",
     "monocle-ts": "^2.3.13",
     "newtype-ts": "^0.3.5",
     "pino": "8.4.2",

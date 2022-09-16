@@ -33,7 +33,7 @@ specifiers:
   mongoose: 6.6.1
   monocle-ts: ^2.3.13
   newtype-ts: ^0.3.5
-  nodemon: 2.0.19
+  nodemon: 2.0.20
   npm-run-all: 4.1.5
   pino: 8.5.0
   pino-http: ^8.2.0
@@ -89,7 +89,7 @@ devDependencies:
   get-port: 6.1.2
   get-port-cli: 3.0.0
   mocha: 10.0.0
-  nodemon: 2.0.19
+  nodemon: 2.0.20
   npm-run-all: 4.1.5
   prettier: 2.7.1
   shx: 0.3.4
@@ -2884,11 +2884,10 @@ packages:
       tslib: 2.4.0
     dev: false
 
-  /nodemon/2.0.19:
-    resolution: {integrity: sha512-4pv1f2bMDj0Eeg/MhGqxrtveeQ5/G/UVe9iO6uTZzjnRluSA4PVWf8CW99LUPwGB3eNIA7zUFoP77YuI7hOc0A==}
+  /nodemon/2.0.20:
+    resolution: {integrity: sha512-Km2mWHKKY5GzRg6i1j5OxOHQtuvVsgskLfigG25yTtbyfRGn/GNvIbRyOf1PSCKJ2aT/58TiuUsuOU5UToVViw==}
     engines: {node: '>=8.10.0'}
     hasBin: true
-    requiresBuild: true
     dependencies:
       chokidar: 3.5.3
       debug: 3.2.7_supports-color@5.5.0

@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@sinclair/typebox": "^0.24.38",
-    "awilix": "^7.0.3",
+    "awilix": "^8.0.0",
     "bson": "^4.7.0",
     "change-case": "^4.1.2",
     "comment-json": "^4.2.3",

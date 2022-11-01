@@ -5,7 +5,7 @@ specifiers:
   '@sinclair/typebox': ^0.25.0
   '@types/convict': 6.1.1
   '@types/mocha': 10.0.0
-  '@types/node': 18.11.8
+  '@types/node': 18.11.9
   '@types/wtfnode': 0.7.0
   '@typescript-eslint/eslint-plugin': 5.42.0
   '@typescript-eslint/parser': 5.42.0
@@ -75,7 +75,7 @@ devDependencies:
   '@ngneat/falso': 6.1.0
   '@types/convict': 6.1.1
   '@types/mocha': 10.0.0
-  '@types/node': 18.11.8
+  '@types/node': 18.11.9
   '@types/wtfnode': 0.7.0
   '@typescript-eslint/eslint-plugin': 5.42.0_zr3tj5oa5uzgt3hiosros3zj6e
   '@typescript-eslint/parser': 5.42.0_hpi7hxmdxhpbf7i6x3w4ptl4fu
@@ -94,7 +94,7 @@ devDependencies:
   prettier: 2.7.1
   shx: 0.3.4
   tiny-glob: 0.2.9
-  ts-node: 10.9.1_juqtzjl4wctzeqr2x4x33piwzi
+  ts-node: 10.9.1_iwjeuo5dinivysbddhw4eygg7m
   tsm: 2.2.2
   wtfnode: 0.9.1
 
@@ -996,7 +996,7 @@ packages:
       '@jest/schemas': 29.0.0
       '@types/istanbul-lib-coverage': 2.0.4
       '@types/istanbul-reports': 3.0.1
-      '@types/node': 18.11.8
+      '@types/node': 18.11.9
       '@types/yargs': 17.0.10
       chalk: 4.1.2
     dev: true
@@ -1086,14 +1086,14 @@ packages:
   /@types/convict/6.1.1:
     resolution: {integrity: sha512-R+JLaTvhsD06p4jyjUDtbd5xMtZTRE3c0iI+lrFWZogSVEjgTWPYwvJPVf+t92E+yrlbXa4X4Eg9ro6gPdUt4w==}
     dependencies:
-      '@types/node': 18.11.8
+      '@types/node': 18.11.9
     dev: true
 
   /@types/glob/7.2.0:
     resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
     dependencies:
       '@types/minimatch': 3.0.5
-      '@types/node': 18.11.8
+      '@types/node': 18.11.9
     dev: false
 
   /@types/istanbul-lib-coverage/2.0.4:
@@ -1131,8 +1131,8 @@ packages:
     resolution: {integrity: sha512-rADY+HtTOA52l9VZWtgQfn4p+UDVM2eDVkMZT1I6syp0YKxW2F9v+0pbRZLsvskhQv/vMb6ZfCay81GHbz5SHg==}
     dev: true
 
-  /@types/node/18.11.8:
-    resolution: {integrity: sha512-uGwPWlE0Hj972KkHtCDVwZ8O39GmyjfMane1Z3GUBGGnkZ2USDq7SxLpVIiIHpweY9DS0QTDH0Nw7RNBsAAZ5A==}
+  /@types/node/18.11.9:
+    resolution: {integrity: sha512-CRpX21/kGdzjOpFsZSkcrXMGIBWMGNIHXXBVFSH+ggkftxg+XYP20TESbh+zFvFj3EQOl5byk0HTRn1IL6hbqg==}
 
   /@types/normalize-package-data/2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
@@ -1157,7 +1157,7 @@ packages:
   /@types/whatwg-url/8.2.2:
     resolution: {integrity: sha512-FtQu10RWgn3D9U4aazdwIE2yzphmTJREDqNdODHrbrZmmMqI0vMheC/6NE/J1Yveaj8H+ela+YwWTjq5PGmuhA==}
     dependencies:
-      '@types/node': 18.11.8
+      '@types/node': 18.11.9
       '@types/webidl-conversions': 7.0.0
     dev: false
 
@@ -3250,7 +3250,7 @@ packages:
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
       '@jest/types': 29.2.1
-      '@types/node': 18.11.8
+      '@types/node': 18.11.9
       chalk: 4.1.2
       ci-info: 3.3.2
       graceful-fs: 4.2.10
@@ -4599,7 +4599,7 @@ packages:
     engines: {node: '>=12'}
     dev: true
 
-  /ts-node/10.9.1_juqtzjl4wctzeqr2x4x33piwzi:
+  /ts-node/10.9.1_iwjeuo5dinivysbddhw4eygg7m:
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -4618,7 +4618,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.3
-      '@types/node': 18.11.8
+      '@types/node': 18.11.9
       acorn: 8.7.1
       acorn-walk: 8.2.0
       arg: 4.1.3

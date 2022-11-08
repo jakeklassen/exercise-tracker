@@ -64,7 +64,7 @@
     "eslint": "8.27.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-prettier": "4.2.1",
-    "expect": "29.3.0",
+    "expect": "29.3.1",
     "get-port": "6.1.2",
     "get-port-cli": "3.0.0",
     "mocha": "10.1.0",

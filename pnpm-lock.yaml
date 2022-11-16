@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@ngneat/falso': 6.1.0
+  '@ngneat/falso': 6.2.0
   '@sinclair/typebox': ^0.25.0
   '@types/convict': 6.1.1
   '@types/mocha': 10.0.0
@@ -72,7 +72,7 @@ dependencies:
   umzug: 3.2.1
 
 devDependencies:
-  '@ngneat/falso': 6.1.0
+  '@ngneat/falso': 6.2.0
   '@types/convict': 6.1.1
   '@types/mocha': 10.0.0
   '@types/node': 18.11.9
@@ -1021,8 +1021,8 @@ packages:
     resolution: {integrity: sha512-4JQNk+3mVzK3xh2rqd6RB4J46qUR19azEHBneZyTZM+c456qOrbbM/5xcR8huNCCcbVt7+UmizG6GuUvPvKUYg==}
     dev: false
 
-  /@ngneat/falso/6.1.0:
-    resolution: {integrity: sha512-eka5OxW65B1RphpLJ04Pd4PEkrmTab/Ut50K0OceAdM+O+MZA7YF9xo51uZgkxbhg8bJ5zEh5vucDRMSofcqsw==}
+  /@ngneat/falso/6.2.0:
+    resolution: {integrity: sha512-TNoLCjsWp0DqhrnvdFTAbVo7zqT0VhoxVrhRDFBnB0opGaSQLXOj8fteZKi8SBMfB6VrqIQtK7LZa7Zs7N6IkQ==}
     dependencies:
       seedrandom: 3.0.5
       uuid: 8.3.2

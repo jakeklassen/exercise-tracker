@@ -13,7 +13,9 @@ export interface MigrationContext {
   context: AppCradle;
 }
 
-export default async function resolveUmzug(cradle: AppCradle): Promise<Umzug> {
+export default async function resolveUmzug(
+  cradle: AppCradle,
+): Promise<Umzug<AppCradle>> {
   const migrationsPath = new URL('..', import.meta.url).pathname;
   const connection = (await cradle.mongoose).connection;
 
@@ -42,7 +44,5 @@ export default async function resolveUmzug(cradle: AppCradle): Promise<Umzug> {
     }),
   });
 
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-expect-error
   return umzug;
 }

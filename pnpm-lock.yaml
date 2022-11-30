@@ -30,7 +30,7 @@ specifiers:
   json-schema-to-typescript: 11.0.2
   mocha: 10.1.0
   mongodb: ^4.12.1
-  mongoose: 6.7.4
+  mongoose: 6.7.5
   monocle-ts: ^2.3.13
   newtype-ts: ^0.3.5
   nodemon: 2.0.20
@@ -61,7 +61,7 @@ dependencies:
   io-ts: 2.2.19_fp-ts@2.13.1
   json-schema-to-typescript: 11.0.2
   mongodb: 4.12.1
-  mongoose: 6.7.4
+  mongoose: 6.7.5
   monocle-ts: 2.3.13_fp-ts@2.13.1
   newtype-ts: 0.3.5_y4ecnzjsatnzoei5elwf4wjeqa
   pino: 8.7.0
@@ -3456,8 +3456,8 @@ packages:
       - aws-crt
     dev: false
 
-  /mongoose/6.7.4:
-    resolution: {integrity: sha512-0LWMrOa5U43cR3I/iRPnmyedoa6T8+QPxmFYdPgx4WAS0CdbSbOzAFSKeU6bndUY6cs4VkxKZGcuDM0twystCg==}
+  /mongoose/6.7.5:
+    resolution: {integrity: sha512-3ppxBxDUIoQKYISVpAg7hjmV1lkGBN3tN9AkQr1Vqc68L5k+Bo+uyfOhpbCFpCf5JZLcEO4cmuB5YX+d9h3plw==}
     engines: {node: '>=12.0.0'}
     dependencies:
       bson: 4.7.0

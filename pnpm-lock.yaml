@@ -30,7 +30,7 @@ specifiers:
   json-schema-to-typescript: 11.0.2
   mocha: 10.1.0
   mongodb: ^4.12.1
-  mongoose: 6.7.5
+  mongoose: 6.8.0
   monocle-ts: ^2.3.13
   newtype-ts: ^0.3.5
   nodemon: 2.0.20
@@ -61,7 +61,7 @@ dependencies:
   io-ts: 2.2.19_fp-ts@2.13.1
   json-schema-to-typescript: 11.0.2
   mongodb: 4.12.1
-  mongoose: 6.7.5
+  mongoose: 6.8.0
   monocle-ts: 2.3.13_fp-ts@2.13.1
   newtype-ts: 0.3.5_y4ecnzjsatnzoei5elwf4wjeqa
   pino: 8.7.0
@@ -1874,11 +1874,6 @@ packages:
       object-keys: 1.1.1
     dev: true
 
-  /denque/2.1.0:
-    resolution: {integrity: sha512-HVQE3AAb/pxF8fQAoiqpvg9i3evqug3hoiwakOyZAwJm+6vZehbkYXZ0l4JxS+I3QxM97v5aaRNhj8v5oBhekw==}
-    engines: {node: '>=0.10'}
-    dev: false
-
   /diff-sequences/29.3.1:
     resolution: {integrity: sha512-hlM3QR272NXCi4pq+N4Kok4kOp6EsgOM3ZSpJI7Da3UAs+Ttsi8MRmB6trM/lhyzUxGfOgnpkHtgqm5Q/CTcfQ==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
@@ -3176,8 +3171,9 @@ packages:
     resolution: {integrity: sha512-Bdboy+l7tA3OGW6FjyFHWkP5LuByj1Tk33Ljyq0axyzdk9//JSi2u3fP1QSmd1KNwq6VOKYGlAu87CisVir6Pw==}
     dev: true
 
-  /kareem/2.4.1:
-    resolution: {integrity: sha512-aJ9opVoXroQUPfovYP5kaj2lM7Jn02Gw13bL0lg9v0V7SaUc0qavPs0Eue7d2DcC3NjqI6QAUElXNsuZSeM+EA==}
+  /kareem/2.5.0:
+    resolution: {integrity: sha512-rVBUGGwvqg130iwYu8k7lutHuDBFj1yGRdnlE44wEhxAmFBad1zcL66PdWC1raw3tIObY6XWhtv3VL04xQb/cg==}
+    engines: {node: '>=12.0.0'}
     dev: false
 
   /kind-of/6.0.3:
@@ -3427,21 +3423,6 @@ packages:
       whatwg-url: 11.0.0
     dev: false
 
-  /mongodb/4.11.0:
-    resolution: {integrity: sha512-9l9n4Nk2BYZzljW3vHah3Z0rfS5npKw6ktnkmFgTcnzaXH1DRm3pDl6VMHu84EVb1lzmSaJC4OzWZqTkB5i2wg==}
-    engines: {node: '>=12.9.0'}
-    dependencies:
-      bson: 4.7.0
-      denque: 2.1.0
-      mongodb-connection-string-url: 2.5.4
-      socks: 2.7.1
-    optionalDependencies:
-      '@aws-sdk/credential-providers': 3.216.0
-      saslprep: 1.0.3
-    transitivePeerDependencies:
-      - aws-crt
-    dev: false
-
   /mongodb/4.12.1:
     resolution: {integrity: sha512-koT87tecZmxPKtxRQD8hCKfn+ockEL2xBiUvx3isQGI6mFmagWt4f4AyCE9J4sKepnLhMacoCTQQA6SLAI2L6w==}
     engines: {node: '>=12.9.0'}
@@ -3456,13 +3437,13 @@ packages:
       - aws-crt
     dev: false
 
-  /mongoose/6.7.5:
-    resolution: {integrity: sha512-3ppxBxDUIoQKYISVpAg7hjmV1lkGBN3tN9AkQr1Vqc68L5k+Bo+uyfOhpbCFpCf5JZLcEO4cmuB5YX+d9h3plw==}
+  /mongoose/6.8.0:
+    resolution: {integrity: sha512-zlUfjcLya3pLfLTxwyH5S9bZUolJWGKF2M7PEV0118jv4VWHR/krjb6LIWu1RPQN2rwYmnmjjzJLVhbhmHqSmg==}
     engines: {node: '>=12.0.0'}
     dependencies:
       bson: 4.7.0
-      kareem: 2.4.1
-      mongodb: 4.11.0
+      kareem: 2.5.0
+      mongodb: 4.12.1
       mpath: 0.9.0
       mquery: 4.0.3
       ms: 2.1.3

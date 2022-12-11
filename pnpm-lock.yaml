@@ -28,7 +28,7 @@ specifiers:
   http-status-codes: ^2.2.0
   io-ts: ^2.2.19
   json-schema-to-typescript: 11.0.2
-  mocha: 10.1.0
+  mocha: 10.2.0
   mongodb: ^4.12.1
   mongoose: 6.8.0
   monocle-ts: ^2.3.13
@@ -88,7 +88,7 @@ devDependencies:
   expect: 29.3.1
   get-port: 6.1.2
   get-port-cli: 3.0.0
-  mocha: 10.1.0
+  mocha: 10.2.0
   nodemon: 2.0.20
   npm-run-all: 4.1.5
   prettier: 2.8.1
@@ -3616,8 +3616,8 @@ packages:
     hasBin: true
     dev: false
 
-  /mocha/10.1.0:
-    resolution: {integrity: sha512-vUF7IYxEoN7XhQpFLxQAEMtE4W91acW4B6En9l97MwE9stL1A9gusXfoHZCLVHDUJ/7V5+lbCM6yMqzo5vNymg==}
+  /mocha/10.2.0:
+    resolution: {integrity: sha512-IDY7fl/BecMwFHzoqF2sg/SHHANeBoMMXFlS9r0OXKDssYE1M5O43wUY/9BVPeIvfH2zmEbBfseqN9gBQZzXkg==}
     engines: {node: '>= 14.0.0'}
     hasBin: true
     dependencies:

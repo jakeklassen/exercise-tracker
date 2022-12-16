@@ -8,6 +8,8 @@ declare module '#app/container.js' {
 }
 
 export const resolveDatabaseConnection = async ({ config }: AppCradle) => {
+  mongoose.set('strictQuery', false);
+
   await mongoose.connect(config.get('mongo.url'), {
     autoIndex: false,
     dbName: config.get('mongo.db'),

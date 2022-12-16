@@ -1,6 +1,10 @@
 import { build } from '#app/app.js';
 import { initializeContainer } from '#app/container.js';
+import { addCleanupListener, exitAfterCleanup } from 'async-cleanup';
 import pino from 'pino';
+import { Logger } from 'tslog';
+
+const logger = new Logger();
 
 const { app, container } = build({
   container: await initializeContainer(),
@@ -23,21 +27,12 @@ app.listen({ port }, () => {
 });
 
 const cleanup = async () => {
+  logger.debug(`Exit hook cleanup`);
+
   await app.close();
   await container.dispose();
 
-  process.exit(0);
+  await exitAfterCleanup(process.exitCode);
 };
 
-// https://www.baeldung.com/linux/sigint-and-other-termination-signals#how-sigint-relates-to-sigterm-sigquit-and-sigkill
-process.on('SIGINT', async () => {
-  await cleanup();
-});
-
-process.on('SIGTERM', async () => {
-  await cleanup();
-});
-
-process.on('SIGUSR2', async () => {
-  await cleanup();
-});
+addCleanupListener(cleanup);

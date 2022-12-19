@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@ngneat/falso': 6.3.2
-  '@sinclair/typebox': ^0.25.13
+  '@sinclair/typebox': ^0.25.14
   '@types/convict': 6.1.1
   '@types/mocha': 10.0.1
   '@types/node': 18.11.17
@@ -44,14 +44,14 @@ specifiers:
   shx: 0.3.4
   tiny-glob: 0.2.9
   ts-node: 10.9.1
-  tslog: ^4.4.4
+  tslog: ^4.4.5
   tsm: 2.3.0
   typescript: ^4.9.4
   umzug: ^3.2.1
   wtfnode: 0.9.1
 
 dependencies:
-  '@sinclair/typebox': 0.25.13
+  '@sinclair/typebox': 0.25.14
   async-cleanup: 1.0.0
   awilix: 8.0.0
   bson: 4.7.0
@@ -71,7 +71,7 @@ dependencies:
   pino-http: 8.3.0
   pino-pretty: 9.1.1
   reflect-metadata: 0.1.13
-  tslog: 4.4.4
+  tslog: 4.4.5
   typescript: 4.9.4
   umzug: 3.2.1
 
@@ -1315,8 +1315,8 @@ packages:
     resolution: {integrity: sha512-1P1OROm/rdubP5aFDSZQILU0vrLCJ4fvHt6EoqHEM+2D/G5MK3bIaymUKLit8Js9gbns5UyJnkP/TZROLw4tUA==}
     dev: true
 
-  /@sinclair/typebox/0.25.13:
-    resolution: {integrity: sha512-XiEwzYpUwE5y/k333Cy0Ujmxvw/mA4zIyEmwUyA0EDDik7ba8S/HClvz3ylOsABfYSj+/skQq4QJl0k/Z1eDLg==}
+  /@sinclair/typebox/0.25.14:
+    resolution: {integrity: sha512-QHPtRqD95nGnJZHWolgKFNmpuY8gpqVEfyasUSJO78X62f4nKmxPbDjd8FpMmwj2J8d0gQWChLtuBtH4yw0qpA==}
     dev: false
 
   /@tsconfig/node10/1.0.9:
@@ -4735,8 +4735,8 @@ packages:
     resolution: {integrity: sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==}
     dev: false
 
-  /tslog/4.4.4:
-    resolution: {integrity: sha512-+IJBVcB6h4BhMH3+IvB69lDZ/5ClHX40I66bGTKPAx+/S9nDqJCYN323MxR/gch3Agvrwif4HQorI/YLqAeoNA==}
+  /tslog/4.4.5:
+    resolution: {integrity: sha512-4Ua+3kfouSBIuSRgAQAV1rC0wLhOxoQdUgQC752rDe4r4jPlU0ANBCTo8x/nJLgIYdqVVs0HeB5UiNj1zEmDyw==}
     engines: {node: '>=16'}
     dev: false
 

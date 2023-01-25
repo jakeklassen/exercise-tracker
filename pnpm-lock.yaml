@@ -31,7 +31,7 @@ specifiers:
   json-schema-to-typescript: 11.0.3
   mocha: 10.2.0
   mongodb: ^4.13.0
-  mongoose: 6.8.4
+  mongoose: 6.9.0
   monocle-ts: ^2.3.13
   newtype-ts: ^0.3.5
   nodemon: 2.0.20
@@ -64,7 +64,7 @@ dependencies:
   io-ts: 2.2.20_fp-ts@2.13.1
   json-schema-to-typescript: 11.0.3
   mongodb: 4.13.0
-  mongoose: 6.8.4
+  mongoose: 6.9.0
   monocle-ts: 2.3.13_fp-ts@2.13.1
   newtype-ts: 0.3.5_y4ecnzjsatnzoei5elwf4wjeqa
   pino: 8.8.0
@@ -3667,20 +3667,6 @@ packages:
       whatwg-url: 11.0.0
     dev: false
 
-  /mongodb/4.12.1:
-    resolution: {integrity: sha512-koT87tecZmxPKtxRQD8hCKfn+ockEL2xBiUvx3isQGI6mFmagWt4f4AyCE9J4sKepnLhMacoCTQQA6SLAI2L6w==}
-    engines: {node: '>=12.9.0'}
-    dependencies:
-      bson: 4.7.2
-      mongodb-connection-string-url: 2.6.0
-      socks: 2.7.1
-    optionalDependencies:
-      '@aws-sdk/credential-providers': 3.245.0
-      saslprep: 1.0.3
-    transitivePeerDependencies:
-      - aws-crt
-    dev: false
-
   /mongodb/4.13.0:
     resolution: {integrity: sha512-+taZ/bV8d1pYuHL4U+gSwkhmDrwkWbH1l4aah4YpmpscMwgFBkufIKxgP/G7m87/NUuQzc2Z75ZTI7ZOyqZLbw==}
     engines: {node: '>=12.9.0'}
@@ -3695,13 +3681,13 @@ packages:
       - aws-crt
     dev: false
 
-  /mongoose/6.8.4:
-    resolution: {integrity: sha512-19Jk2hbSAPcM4u6ErW0UPwaSO2YfP/cXfBS9YEiNgNzZfXd+jkyemqJ+t2aflaicXeU4VdTP33pZYxqjk2hUYw==}
+  /mongoose/6.9.0:
+    resolution: {integrity: sha512-5tu6+trwjk5TIH6b6iYgAwmzZ0RNOxFoqXQb9h21Oi45DeM1rWM/niHxJ4ROqBISDfQMwRvLSABHTsyn3AzoFQ==}
     engines: {node: '>=12.0.0'}
     dependencies:
       bson: 4.7.2
       kareem: 2.5.1
-      mongodb: 4.12.1
+      mongodb: 4.13.0
       mpath: 0.9.0
       mquery: 4.0.3
       ms: 2.1.3

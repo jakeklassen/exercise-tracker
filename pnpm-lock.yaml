@@ -31,7 +31,7 @@ specifiers:
   json-schema-to-typescript: 11.0.3
   mocha: 10.2.0
   mongodb: ^5.0.0
-  mongoose: 6.9.0
+  mongoose: 6.9.1
   monocle-ts: ^2.3.13
   newtype-ts: ^0.3.5
   nodemon: 2.0.20
@@ -64,7 +64,7 @@ dependencies:
   io-ts: 2.2.20_fp-ts@2.13.1
   json-schema-to-typescript: 11.0.3
   mongodb: 5.0.0
-  mongoose: 6.9.0
+  mongoose: 6.9.1
   monocle-ts: 2.3.13_fp-ts@2.13.1
   newtype-ts: 0.3.5_y4ecnzjsatnzoei5elwf4wjeqa
   pino: 8.9.0
@@ -3700,8 +3700,8 @@ packages:
       saslprep: 1.0.3
     dev: false
 
-  /mongoose/6.9.0:
-    resolution: {integrity: sha512-5tu6+trwjk5TIH6b6iYgAwmzZ0RNOxFoqXQb9h21Oi45DeM1rWM/niHxJ4ROqBISDfQMwRvLSABHTsyn3AzoFQ==}
+  /mongoose/6.9.1:
+    resolution: {integrity: sha512-hOz1ZWV0w6WEVLrj89Wpk7PXDYtDDF6k7/NX79lY5iKqeFtZsceBXW8xW59YFNcW5O3cH32hQ8IbDlhgyBsDMA==}
     engines: {node: '>=12.0.0'}
     dependencies:
       bson: 4.7.2

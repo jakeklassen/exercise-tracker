@@ -20,7 +20,6 @@ export async function up({
       },
       {
         background: true,
-        writeConcern: { w: 1 },
         unique: true,
         name: UNIQUE_USERNAME_INDEX_NAME,
       },

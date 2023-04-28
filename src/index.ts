@@ -1,6 +1,7 @@
 import { build } from '#app/app.js';
 import { initializeContainer } from '#app/container.js';
 import { addCleanupListener, exitAfterCleanup } from 'async-cleanup';
+import fastify from 'fastify';
 import pino from 'pino';
 import { Logger } from 'tslog';
 
@@ -8,7 +9,7 @@ const logger = new Logger();
 
 const { app, container } = build({
   container: await initializeContainer(),
-  fastifyServerOptions: {
+  fastifyInstance: fastify({
     logger: pino({
       transport: {
         target: 'pino-pretty',
@@ -17,7 +18,7 @@ const { app, container } = build({
         },
       },
     }),
-  },
+  }),
 });
 
 const port = container.cradle.config.get('port');

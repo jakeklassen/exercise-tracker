@@ -5,6 +5,7 @@ import { USER_ROUTE } from '#app/modules/user/route.js';
 import { User } from '#app/modules/user/user.model.js';
 import { randUserName } from '@ngneat/falso';
 import { expect } from 'expect';
+import fastify from 'fastify';
 import { StatusCodes } from 'http-status-codes';
 import { ObjectId } from 'mongodb';
 
@@ -17,9 +18,9 @@ const testContainer = await initializeContainer();
 
 const { app, container } = build({
   container: testContainer,
-  fastifyServerOptions: {
+  fastifyInstance: fastify({
     logger: false,
-  },
+  }),
 });
 
 const UserModel = await container.cradle.UserModel;

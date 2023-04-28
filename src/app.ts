@@ -1,21 +1,19 @@
 import { AppCradle } from '#app/container.js';
 import { AwilixContainer } from 'awilix';
-import fastify from 'fastify';
+import { FastifyInstance } from 'fastify';
 import { StatusCodes } from 'http-status-codes';
 import { MongoServerError } from 'mongodb';
 
 interface BuildOptions {
   container: AwilixContainer<AppCradle>;
-  fastifyServerOptions: Parameters<typeof fastify>[0];
+  fastifyInstance: FastifyInstance;
 }
 
 /**
  * App factory
  */
 export const build = (opts: BuildOptions) => {
-  const { fastifyServerOptions, container } = opts;
-
-  const app = fastify(fastifyServerOptions);
+  const { fastifyInstance: app, container } = opts;
 
   // TODO abstract to error handler
   app.addHook('onError', (request, reply, error, done) => {

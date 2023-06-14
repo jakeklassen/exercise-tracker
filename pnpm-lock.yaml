@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@sinclair/typebox':
     specifier: ^0.28.8
@@ -35,8 +39,8 @@ dependencies:
     specifier: ^2.2.20
     version: 2.2.20(fp-ts@2.14.0)
   json-schema-to-typescript:
-    specifier: 12.0.0
-    version: 12.0.0
+    specifier: 13.0.2
+    version: 13.0.2
   mongodb:
     specifier: ^5.3.0
     version: 5.3.0
@@ -2601,8 +2605,8 @@ packages:
     resolution: {integrity: sha512-xyFwyhro/JEof6Ghe2iz2NcXoj2sloNsWr/XsERDK/oiPCfaNhl5ONfp+jQdAZRQQ0IJWNzH9zIZF7li91kh2w==}
     dev: true
 
-  /json-schema-to-typescript@12.0.0:
-    resolution: {integrity: sha512-Uk/BDIAo8vqepPBhM86UhNMHgCv7JulicNj/BgnQPHE1fGCoej0UTtcEYzXU/uk6lSvbZCf7pccW+dnNMrr5rg==}
+  /json-schema-to-typescript@13.0.2:
+    resolution: {integrity: sha512-TCaEVW4aI2FmMQe7f98mvr3/oiVmXEC1xZjkTZ9L/BSoTXFlC7p64mD5AD2d8XWycNBQZUnHwXL5iVXt1HWwNQ==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:

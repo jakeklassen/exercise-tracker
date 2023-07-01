@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@sinclair/typebox':
     specifier: ^0.28.8
@@ -82,8 +86,8 @@ devDependencies:
     specifier: 10.0.1
     version: 10.0.1
   '@types/node':
-    specifier: 18.16.2
-    version: 18.16.2
+    specifier: 18.16.19
+    version: 18.16.19
   '@types/wtfnode':
     specifier: 0.7.0
     version: 0.7.0
@@ -140,7 +144,7 @@ devDependencies:
     version: 0.2.9
   ts-node:
     specifier: 10.9.1
-    version: 10.9.1(@types/node@18.16.2)(typescript@5.0.4)
+    version: 10.9.1(@types/node@18.16.19)(typescript@5.0.4)
   tsm:
     specifier: 2.3.0
     version: 2.3.0
@@ -504,7 +508,7 @@ packages:
       '@jest/schemas': 29.4.3
       '@types/istanbul-lib-coverage': 2.0.4
       '@types/istanbul-reports': 3.0.1
-      '@types/node': 18.16.2
+      '@types/node': 18.16.19
       '@types/yargs': 17.0.24
       chalk: 4.1.2
     dev: true
@@ -594,14 +598,14 @@ packages:
   /@types/convict@6.1.1:
     resolution: {integrity: sha512-R+JLaTvhsD06p4jyjUDtbd5xMtZTRE3c0iI+lrFWZogSVEjgTWPYwvJPVf+t92E+yrlbXa4X4Eg9ro6gPdUt4w==}
     dependencies:
-      '@types/node': 18.16.2
+      '@types/node': 18.16.19
     dev: true
 
   /@types/glob@7.2.0:
     resolution: {integrity: sha512-ZUxbzKl0IfJILTS6t7ip5fQQM/J3TJYubDm3nMbgubNNYS62eXeUpoLUC8/7fJNiFYHTrGPQn7hspDUzIHX3UA==}
     dependencies:
       '@types/minimatch': 5.1.2
-      '@types/node': 18.16.2
+      '@types/node': 18.16.19
     dev: false
 
   /@types/istanbul-lib-coverage@2.0.4:
@@ -639,8 +643,8 @@ packages:
     resolution: {integrity: sha512-/fvYntiO1GeICvqbQ3doGDIP97vWmvFt83GKguJ6prmQM2iXZfFcq6YE8KteFyRtX2/h5Hf91BYvPodJKFYv5Q==}
     dev: true
 
-  /@types/node@18.16.2:
-    resolution: {integrity: sha512-GQW/JL/5Fz/0I8RpeBG9lKp0+aNcXEaVL71c0D2Q0QHDTFvlYKT7an0onCUXj85anv7b4/WesqdfchLc0jtsCg==}
+  /@types/node@18.16.19:
+    resolution: {integrity: sha512-IXl7o+R9iti9eBW4Wg2hx1xQDig183jj7YLn8F7udNceyfkbn1ZxmzZXuak20gR40D7pIkIY1kYGx5VIGbaHKA==}
 
   /@types/normalize-package-data@2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
@@ -665,7 +669,7 @@ packages:
   /@types/whatwg-url@8.2.2:
     resolution: {integrity: sha512-FtQu10RWgn3D9U4aazdwIE2yzphmTJREDqNdODHrbrZmmMqI0vMheC/6NE/J1Yveaj8H+ela+YwWTjq5PGmuhA==}
     dependencies:
-      '@types/node': 18.16.2
+      '@types/node': 18.16.19
       '@types/webidl-conversions': 7.0.0
     dev: false
 
@@ -2567,7 +2571,7 @@ packages:
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dependencies:
       '@jest/types': 29.5.0
-      '@types/node': 18.16.2
+      '@types/node': 18.16.19
       chalk: 4.1.2
       ci-info: 3.8.0
       graceful-fs: 4.2.11
@@ -3896,7 +3900,7 @@ packages:
     engines: {node: '>=12'}
     dev: true
 
-  /ts-node@10.9.1(@types/node@18.16.2)(typescript@5.0.4):
+  /ts-node@10.9.1(@types/node@18.16.19)(typescript@5.0.4):
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -3915,7 +3919,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.3
-      '@types/node': 18.16.2
+      '@types/node': 18.16.19
       acorn: 8.7.1
       acorn-walk: 8.2.0
       arg: 4.1.3

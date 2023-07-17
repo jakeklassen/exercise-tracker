@@ -53,6 +53,6 @@ export const resolveUserCreateRoute = ({ UserModel }: AppCradle) =>
         updatedAt: user.updatedAt.toISOString(),
       };
     },
-  } as CreateUserRoute);
+  }) as CreateUserRoute;
 
 export default resolveUserCreateRoute;

@@ -55,6 +55,6 @@ export const resolveGetUserExerciseLogRoute = ({ UserModel }: AppCradle) =>
         return response;
       });
     },
-  } as GetUserExerciseLogRoute);
+  }) as GetUserExerciseLogRoute;
 
 export default resolveGetUserExerciseLogRoute;

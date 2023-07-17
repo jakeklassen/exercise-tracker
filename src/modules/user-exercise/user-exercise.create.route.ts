@@ -84,6 +84,6 @@ export const resolveUserExerciseCreateRoute = ({ UserModel }: AppCradle) =>
         return response;
       });
     },
-  } as CreateUserExerciseRoute);
+  }) as CreateUserExerciseRoute;
 
 export default resolveUserExerciseCreateRoute;

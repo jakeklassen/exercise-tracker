@@ -46,6 +46,7 @@ export const initializeContainer = async () => {
        * @param descriptor
        * @returns
        */
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       formatName(name: string, descriptor: ModuleDescriptor): string {
         if (name.endsWith('.model')) {
           return pascalCase(name);

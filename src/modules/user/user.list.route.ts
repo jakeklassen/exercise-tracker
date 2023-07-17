@@ -48,6 +48,6 @@ export const resolveUserListRoute = ({ UserModel }: AppCradle) =>
         ]),
       );
     },
-  } as ListUserRoute);
+  }) as ListUserRoute;
 
 export default resolveUserListRoute;

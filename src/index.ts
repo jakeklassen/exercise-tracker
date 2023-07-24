@@ -2,7 +2,6 @@ import { build } from '#app/app.js';
 import { initializeContainer } from '#app/container.js';
 import { addCleanupListener, exitAfterCleanup } from 'async-cleanup';
 import fastify from 'fastify';
-import pino from 'pino';
 import { Logger } from 'tslog';
 
 const logger = new Logger();
@@ -10,14 +9,14 @@ const logger = new Logger();
 const { app, container } = build({
   container: await initializeContainer(),
   fastifyInstance: fastify({
-    logger: pino({
+    logger: {
       transport: {
         target: 'pino-pretty',
         options: {
           colorize: true,
         },
       },
-    }),
+    },
   }),
 });
 

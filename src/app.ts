@@ -4,9 +4,9 @@ import { FastifyInstance } from 'fastify';
 import { StatusCodes } from 'http-status-codes';
 import { MongoServerError } from 'mongodb';
 
-interface BuildOptions {
+interface BuildOptions<App extends FastifyInstance = FastifyInstance> {
   container: AwilixContainer<AppCradle>;
-  fastifyInstance: FastifyInstance;
+  fastifyInstance: App;
 }
 
 /**

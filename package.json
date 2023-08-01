@@ -28,7 +28,7 @@
     ]
   },
   "dependencies": {
-    "@sinclair/typebox": "^0.29.6",
+    "@sinclair/typebox": "^0.30.0",
     "async-cleanup": "^1.0.0",
     "awilix": "^8.0.1",
     "bson": "^5.4.0",
@@ -58,8 +58,8 @@
     "@types/mocha": "10.0.1",
     "@types/node": "20.4.5",
     "@types/wtfnode": "0.7.0",
-    "@typescript-eslint/eslint-plugin": "6.2.0",
-    "@typescript-eslint/parser": "6.2.0",
+    "@typescript-eslint/eslint-plugin": "6.2.1",
+    "@typescript-eslint/parser": "6.2.1",
     "clipboardy": "3.0.0",
     "dotenv": "16.3.1",
     "esbuild": "0.18.17",

@@ -28,7 +28,7 @@
     ]
   },
   "dependencies": {
-    "@sinclair/typebox": "^0.30.4",
+    "@sinclair/typebox": "^0.31.0",
     "async-cleanup": "^1.0.0",
     "awilix": "^8.0.1",
     "bson": "^5.4.0",

@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@sinclair/typebox':
-    specifier: ^0.30.4
-    version: 0.30.4
+    specifier: ^0.31.0
+    version: 0.31.0
   async-cleanup:
     specifier: ^1.0.0
     version: 1.0.0
@@ -588,8 +588,8 @@ packages:
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
     dev: true
 
-  /@sinclair/typebox@0.30.4:
-    resolution: {integrity: sha512-wFuuDR+O1OAE2GL0q68h1Ty00RE6Ihcixr55A6TU5RCvOUHnwJw9LGuDVg9NxDiAp7m/YJpa+UaOuLAz0ziyOQ==}
+  /@sinclair/typebox@0.31.0:
+    resolution: {integrity: sha512-bL3KIy1cqi4wyKwJZ3szckq0k/IuLluwQ9IB8QMNS2ogHGiqkempV7uO52Tjr79oBgOnlRaOhIf5qkc8HH9KhA==}
     dev: false
 
   /@tsconfig/node10@1.0.9:

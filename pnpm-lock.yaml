@@ -45,8 +45,8 @@ dependencies:
     specifier: ^5.7.0
     version: 5.7.0
   mongoose:
-    specifier: 7.4.2
-    version: 7.4.2
+    specifier: 7.4.3
+    version: 7.4.3
   monocle-ts:
     specifier: ^2.3.13
     version: 2.3.13(fp-ts@2.16.1)
@@ -3004,8 +3004,8 @@ packages:
       saslprep: 1.0.3
     dev: false
 
-  /mongoose@7.4.2:
-    resolution: {integrity: sha512-sNolW2hyncwvWmZjIEIwAckjaSKtC1SE86zE1v2TKm3vPTRogZfBQf+3zLYYdrgrVTzoaoICieVpct9hjcn3EQ==}
+  /mongoose@7.4.3:
+    resolution: {integrity: sha512-eok0lW6mZJHK2vVSWyJb9tUfPMUuRF3h7YC4pU2K2/YSZBlNDUwvKsHgftMOANbokP2Ry+4ylvzAdW4KjkRFjw==}
     engines: {node: '>=14.20.1'}
     dependencies:
       bson: 5.4.0

@@ -83,8 +83,8 @@ devDependencies:
     specifier: 6.1.4
     version: 6.1.4
   '@types/mocha':
-    specifier: 10.0.1
-    version: 10.0.1
+    specifier: 10.0.3
+    version: 10.0.3
   '@types/node':
     specifier: 20.6.2
     version: 20.6.2
@@ -684,8 +684,8 @@ packages:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
     dev: true
 
-  /@types/mocha@10.0.1:
-    resolution: {integrity: sha512-/fvYntiO1GeICvqbQ3doGDIP97vWmvFt83GKguJ6prmQM2iXZfFcq6YE8KteFyRtX2/h5Hf91BYvPodJKFYv5Q==}
+  /@types/mocha@10.0.3:
+    resolution: {integrity: sha512-RsOPImTriV/OE4A9qKjMtk2MnXiuLLbcO3nCXK+kvq4nr0iMfFgpjaX3MPLb6f7+EL1FGSelYvuJMV6REH+ZPQ==}
     dev: true
 
   /@types/node@20.6.2:

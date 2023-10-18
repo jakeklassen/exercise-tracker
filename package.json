@@ -32,7 +32,7 @@
     "async-cleanup": "^1.0.0",
     "awilix": "^9.0.0",
     "bson": "^6.1.0",
-    "change-case": "^4.1.2",
+    "change-case": "^5.0.0",
     "comment-json": "^4.2.3",
     "convict": "^6.2.4",
     "fastify": "^4.24.2",

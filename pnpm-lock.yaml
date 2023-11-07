@@ -89,8 +89,8 @@ devDependencies:
     specifier: 20.8.7
     version: 20.8.7
   '@types/wtfnode':
-    specifier: 0.7.1
-    version: 0.7.1
+    specifier: 0.7.3
+    version: 0.7.3
   '@typescript-eslint/eslint-plugin':
     specifier: 6.8.0
     version: 6.8.0(@typescript-eslint/parser@6.8.0)(eslint@8.51.0)(typescript@5.2.2)
@@ -722,8 +722,8 @@ packages:
       '@types/webidl-conversions': 7.0.0
     dev: false
 
-  /@types/wtfnode@0.7.1:
-    resolution: {integrity: sha512-0uo9YyPSCbYsHNfoQrEhpLbT/PuGBzaJhItss2Eb2uH+/XEsBabupPVAARmAdEY73wKIQFOZ2L2z9TZ2HbKOxQ==}
+  /@types/wtfnode@0.7.3:
+    resolution: {integrity: sha512-UMkHpx+o2xRWLJ7PmT3bBzvIA9/0oFw80oPtY/xO4jfdq+Gznn4wP7K9B/JjMxyxy+wF+5oRPIykxeBbEDjwRg==}
     dev: true
 
   /@types/yargs-parser@21.0.0:

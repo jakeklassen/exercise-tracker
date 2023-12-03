@@ -80,8 +80,8 @@ devDependencies:
     specifier: 7.1.1
     version: 7.1.1
   '@types/convict':
-    specifier: 6.1.5
-    version: 6.1.5
+    specifier: 6.1.6
+    version: 6.1.6
   '@types/mocha':
     specifier: 10.0.3
     version: 10.0.3
@@ -637,8 +637,8 @@ packages:
     resolution: {integrity: sha512-ebDJ9b0e702Yr7pWgB0jzm+CX4Srzz8RcXtLJDJB+BSccqMa36uyH/zUsSYao5+BD1ytv3k3rPYCq4mAE1hsXA==}
     dev: false
 
-  /@types/convict@6.1.5:
-    resolution: {integrity: sha512-3tsoWY0lxXLDps6RRYwPb+0zOnzDv/cXAruPGngR2mvItsoxdfaX+mAxp3x2xAaEue1bLXa+Jd0JaLOM7YjXKQ==}
+  /@types/convict@6.1.6:
+    resolution: {integrity: sha512-1B6jqWHWQud+7yyWAqbxnPmzlHrrOtJzZr1DhhYJ/NbpS4irfZSnq+N5Fm76J9LNRlUZvCmYxTVhhohWRvtqHw==}
     dependencies:
       '@types/node': 20.8.7
     dev: true

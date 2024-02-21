@@ -77,8 +77,8 @@ dependencies:
 
 devDependencies:
   '@ngneat/falso':
-    specifier: 7.1.1
-    version: 7.1.1
+    specifier: 7.2.0
+    version: 7.2.0
   '@types/convict':
     specifier: 6.1.6
     version: 6.1.6
@@ -572,8 +572,8 @@ packages:
       sparse-bitfield: 3.0.3
     dev: false
 
-  /@ngneat/falso@7.1.1:
-    resolution: {integrity: sha512-/5HuJDaZHXl3WVdgvYBAM52OSYbSKfiNazVOZOw/3KjeZ6dQW9F0QCG+W6z52lUu5MZvp/TkPGaVRtoz6h9T1w==}
+  /@ngneat/falso@7.2.0:
+    resolution: {integrity: sha512-283EXBFd05kCbGuGSXgmvhCsQYEYzvD/eJaE7lxd05qRB0tgREvZX7TRlJ1KSp8nHxoK6Ws029G1Y30mt4IVAA==}
     dependencies:
       seedrandom: 3.0.5
       uuid: 8.3.2

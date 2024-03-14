@@ -61,7 +61,7 @@
     "@typescript-eslint/eslint-plugin": "6.21.0",
     "@typescript-eslint/parser": "6.21.0",
     "clipboardy": "4.0.0",
-    "esbuild": "0.20.0",
+    "esbuild": "0.20.2",
     "eslint": "8.56.0",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-prettier": "5.1.3",

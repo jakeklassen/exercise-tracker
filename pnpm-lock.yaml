@@ -31,13 +31,13 @@ dependencies:
     version: 4.26.2
   fp-ts:
     specifier: ^2.16.3
-    version: 2.16.3
+    version: 2.16.4
   http-status-codes:
     specifier: ^2.3.0
     version: 2.3.0
   io-ts:
     specifier: ^2.2.21
-    version: 2.2.21(fp-ts@2.16.3)
+    version: 2.2.21(fp-ts@2.16.4)
   json-schema-to-typescript:
     specifier: 13.1.2
     version: 13.1.2
@@ -49,10 +49,10 @@ dependencies:
     version: 8.2.1
   monocle-ts:
     specifier: ^2.3.13
-    version: 2.3.13(fp-ts@2.16.3)
+    version: 2.3.13(fp-ts@2.16.4)
   newtype-ts:
     specifier: ^0.3.5
-    version: 0.3.5(fp-ts@2.16.3)(monocle-ts@2.3.13)
+    version: 0.3.5(fp-ts@2.16.4)(monocle-ts@2.3.13)
   pino:
     specifier: 8.19.0
     version: 8.19.0
@@ -2114,8 +2114,8 @@ packages:
     engines: {node: '>= 0.6'}
     dev: false
 
-  /fp-ts@2.16.3:
-    resolution: {integrity: sha512-REm0sOecd4inACbAiFeOxpyOgB+f0OqhmZBBVOc5Ku1HqdroDU5uxYu9mybKj+be4DQ5L2YI6LuosjAfmuJCBQ==}
+  /fp-ts@2.16.4:
+    resolution: {integrity: sha512-EkV/l6oHaf/w/DlVc5UiqLibqTV1S+idiDdcWQ+UjnLLflL9pZG28ebJfPLor8ifoL8NgEFDIo9fOvHyiSCrJQ==}
     dev: false
 
   /fs-extra@7.0.1:
@@ -2409,12 +2409,12 @@ packages:
     engines: {node: '>= 0.10'}
     dev: true
 
-  /io-ts@2.2.21(fp-ts@2.16.3):
+  /io-ts@2.2.21(fp-ts@2.16.4):
     resolution: {integrity: sha512-zz2Z69v9ZIC3mMLYWIeoUcwWD6f+O7yP92FMVVaXEOSZH1jnVBmET/urd/uoarD1WGBY4rCj8TAyMPzsGNzMFQ==}
     peerDependencies:
       fp-ts: ^2.5.0
     dependencies:
-      fp-ts: 2.16.3
+      fp-ts: 2.16.4
     dev: false
 
   /ipaddr.js@1.9.1:
@@ -3076,12 +3076,12 @@ packages:
       - supports-color
     dev: false
 
-  /monocle-ts@2.3.13(fp-ts@2.16.3):
+  /monocle-ts@2.3.13(fp-ts@2.16.4):
     resolution: {integrity: sha512-D5Ygd3oulEoAm3KuGO0eeJIrhFf1jlQIoEVV2DYsZUMz42j4tGxgct97Aq68+F8w4w4geEnwFa8HayTS/7lpKQ==}
     peerDependencies:
       fp-ts: ^2.5.0
     dependencies:
-      fp-ts: 2.16.3
+      fp-ts: 2.16.4
     dev: false
 
   /mpath@0.9.0:
@@ -3116,14 +3116,14 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
 
-  /newtype-ts@0.3.5(fp-ts@2.16.3)(monocle-ts@2.3.13):
+  /newtype-ts@0.3.5(fp-ts@2.16.4)(monocle-ts@2.3.13):
     resolution: {integrity: sha512-v83UEQMlVR75yf1OUdoSFssjitxzjZlqBAjiGQ4WJaML8Jdc68LJ+BaSAXUmKY4bNzp7hygkKLYTsDi14PxI2g==}
     peerDependencies:
       fp-ts: ^2.0.0
       monocle-ts: ^2.0.0
     dependencies:
-      fp-ts: 2.16.3
-      monocle-ts: 2.3.13(fp-ts@2.16.3)
+      fp-ts: 2.16.4
+      monocle-ts: 2.3.13(fp-ts@2.16.4)
     dev: false
 
   /next-tick@1.1.0:

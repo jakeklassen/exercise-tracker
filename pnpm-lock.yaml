@@ -45,8 +45,8 @@ dependencies:
     specifier: ^6.5.0
     version: 6.5.0
   mongoose:
-    specifier: 8.2.1
-    version: 8.2.1
+    specifier: 8.2.3
+    version: 8.2.3
   monocle-ts:
     specifier: ^2.3.13
     version: 2.3.13(fp-ts@2.16.3)
@@ -3054,8 +3054,8 @@ packages:
       mongodb-connection-string-url: 3.0.0
     dev: false
 
-  /mongoose@8.2.1:
-    resolution: {integrity: sha512-UgZZbXSJH0pdU936qj3FyVI+sBsMoGowFnL5R/RYrA50ayn6+ZYdVr8ehsRgNxRcMYwoNld5XzHIfkFRJTePEw==}
+  /mongoose@8.2.3:
+    resolution: {integrity: sha512-ZB8K8AgbVgLCcqjtmZMxaQBEztwEEZCtAIPMx2Q56Uo4WWKmwf5Nu/EEIFo8d/17P946X0z6xzxwIqCxUMKxrA==}
     engines: {node: '>=16.20.1'}
     dependencies:
       bson: 6.5.0

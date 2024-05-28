@@ -32,7 +32,11 @@ const cleanup = async () => {
   await app.close();
   await container.dispose();
 
-  await exitAfterCleanup(process.exitCode);
+  await exitAfterCleanup(
+    typeof process.exitCode === 'string'
+      ? parseInt(process.exitCode)
+      : process.exitCode,
+  );
 };
 
 addCleanupListener(cleanup);

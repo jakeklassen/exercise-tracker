@@ -6,9 +6,9 @@
  */
 
 export type GetApiUsersResponse = {
-  _id: string;
-  username: string;
-  createdAt?: string;
-  updatedAt?: string;
-  [k: string]: unknown;
+	_id: string;
+	username: string;
+	createdAt?: string;
+	updatedAt?: string;
+	[k: string]: unknown;
 }[];

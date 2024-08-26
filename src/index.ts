@@ -7,36 +7,36 @@ import { Logger } from 'tslog';
 const logger = new Logger();
 
 const { app, container } = build({
-  container: await initializeContainer(),
-  fastifyInstance: fastify({
-    logger: {
-      transport: {
-        target: 'pino-pretty',
-        options: {
-          colorize: true,
-        },
-      },
-    },
-  }),
+	container: await initializeContainer(),
+	fastifyInstance: fastify({
+		logger: {
+			transport: {
+				target: 'pino-pretty',
+				options: {
+					colorize: true,
+				},
+			},
+		},
+	}),
 });
 
 const port = container.cradle.config.get('port');
 
 app.listen({ port }, () => {
-  console.log(`Server listening on http://localhost:${port} 🚀`);
+	console.log(`Server listening on http://localhost:${port} 🚀`);
 });
 
 const cleanup = async () => {
-  logger.debug(`Exit hook cleanup`);
+	logger.debug(`Exit hook cleanup`);
 
-  await app.close();
-  await container.dispose();
+	await app.close();
+	await container.dispose();
 
-  await exitAfterCleanup(
-    typeof process.exitCode === 'string'
-      ? parseInt(process.exitCode)
-      : process.exitCode,
-  );
+	await exitAfterCleanup(
+		typeof process.exitCode === 'string'
+			? parseInt(process.exitCode)
+			: process.exitCode,
+	);
 };
 
 addCleanupListener(cleanup);

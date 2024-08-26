@@ -1,58 +1,58 @@
 import { AppCradle } from '#app/container.js';
 import { USER_ROUTE } from '#app/modules/user/route.js';
 import {
-  CreateUserDto,
-  CreateUserDtoType,
-  CreateUserOkResponseDto,
-  CreateUserOkResponseDtoType,
+	CreateUserDto,
+	CreateUserDtoType,
+	CreateUserOkResponseDto,
+	CreateUserOkResponseDtoType,
 } from '#app/modules/user/user.create.dto.js';
 import { FastifySchema, RouteOptions } from 'fastify';
 import { IncomingMessage, Server, ServerResponse } from 'http';
 import { StatusCodes } from 'http-status-codes';
 
 declare module '#app/container.js' {
-  interface AppCradle {
-    userCreateRoute: CreateUserRoute;
-  }
+	interface AppCradle {
+		userCreateRoute: CreateUserRoute;
+	}
 }
 
 type CreateUserRoute = RouteOptions<
-  Server,
-  IncomingMessage,
-  ServerResponse,
-  {
-    Body: CreateUserDtoType;
-    Reply: CreateUserOkResponseDtoType;
-  },
-  FastifySchema
+	Server,
+	IncomingMessage,
+	ServerResponse,
+	{
+		Body: CreateUserDtoType;
+		Reply: CreateUserOkResponseDtoType;
+	},
+	FastifySchema
 >;
 
 export const resolveUserCreateRoute = ({ UserModel }: AppCradle) =>
-  ({
-    method: 'POST',
-    url: USER_ROUTE,
-    schema: {
-      body: CreateUserDto,
-      response: {
-        [StatusCodes.OK]: CreateUserOkResponseDto,
-      },
-    },
+	({
+		method: 'POST',
+		url: USER_ROUTE,
+		schema: {
+			body: CreateUserDto,
+			response: {
+				[StatusCodes.OK]: CreateUserOkResponseDto,
+			},
+		},
 
-    async handler(request) {
-      const user = await UserModel.then((model) =>
-        model.create({
-          username: request.body.username,
-        }),
-      );
+		async handler(request) {
+			const user = await UserModel.then((model) =>
+				model.create({
+					username: request.body.username,
+				}),
+			);
 
-      return {
-        _id: user._id,
-        username: user.username,
-        log: user.log,
-        createdAt: user.createdAt.toISOString(),
-        updatedAt: user.updatedAt.toISOString(),
-      };
-    },
-  }) as CreateUserRoute;
+			return {
+				_id: user._id,
+				username: user.username,
+				log: user.log,
+				createdAt: user.createdAt.toISOString(),
+				updatedAt: user.updatedAt.toISOString(),
+			};
+		},
+	}) as CreateUserRoute;
 
 export default resolveUserCreateRoute;

@@ -14,75 +14,75 @@ const testContainer = await initializeContainer();
 // });
 
 const { app, container } = build({
-  container: testContainer,
-  fastifyInstance: fastify({
-    logger: false,
-  }),
+	container: testContainer,
+	fastifyInstance: fastify({
+		logger: false,
+	}),
 });
 
 const UserModel = await container.cradle.UserModel;
 
 describe(`POST ${USER_ROUTE}`, () => {
-  before(async () => {
-    await container.cradle.mongoose;
-  });
+	before(async () => {
+		await container.cradle.mongoose;
+	});
 
-  beforeEach(async () => {
-    await UserModel.deleteMany({});
-  });
+	beforeEach(async () => {
+		await UserModel.deleteMany({});
+	});
 
-  it('should return Bad Request', async () => {
-    const response = await app.inject({
-      method: 'POST',
-      url: USER_ROUTE,
-    });
+	it('should return Bad Request', async () => {
+		const response = await app.inject({
+			method: 'POST',
+			url: USER_ROUTE,
+		});
 
-    expect(response.statusCode).toBe(StatusCodes.BAD_REQUEST);
-  });
+		expect(response.statusCode).toBe(StatusCodes.BAD_REQUEST);
+	});
 
-  it('should return a valid response', async () => {
-    const response = await app.inject({
-      method: 'POST',
-      url: USER_ROUTE,
-      payload: {
-        username: randUserName(),
-      },
-    });
+	it('should return a valid response', async () => {
+		const response = await app.inject({
+			method: 'POST',
+			url: USER_ROUTE,
+			payload: {
+				username: randUserName(),
+			},
+		});
 
-    expect(response.statusCode).toBe(StatusCodes.OK);
+		expect(response.statusCode).toBe(StatusCodes.OK);
 
-    const count = await UserModel.countDocuments();
+		const count = await UserModel.countDocuments();
 
-    expect(count).toBe(1);
-  });
+		expect(count).toBe(1);
+	});
 
-  it('should error on duplciate username', async () => {
-    const username = randUserName();
+	it('should error on duplciate username', async () => {
+		const username = randUserName();
 
-    await app.inject({
-      method: 'POST',
-      url: USER_ROUTE,
-      payload: {
-        username,
-      },
-    });
+		await app.inject({
+			method: 'POST',
+			url: USER_ROUTE,
+			payload: {
+				username,
+			},
+		});
 
-    const response = await app.inject({
-      method: 'POST',
-      url: USER_ROUTE,
-      payload: {
-        username,
-      },
-    });
+		const response = await app.inject({
+			method: 'POST',
+			url: USER_ROUTE,
+			payload: {
+				username,
+			},
+		});
 
-    expect(response.statusCode).toBe(StatusCodes.BAD_REQUEST);
+		expect(response.statusCode).toBe(StatusCodes.BAD_REQUEST);
 
-    const count = await UserModel.countDocuments();
+		const count = await UserModel.countDocuments();
 
-    expect(count).toBe(1);
-  });
+		expect(count).toBe(1);
+	});
 
-  after(async () => {
-    await container.dispose();
-  });
+	after(async () => {
+		await container.dispose();
+	});
 });

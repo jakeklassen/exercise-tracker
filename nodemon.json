@@ -1,7 +1,7 @@
 {
-  "watch": ["src"],
-  "ignore": ["src/**/*.test.ts"],
-  "ext": "ts,mjs,js,json,graphql",
-  "exec": "pnpm run build && node --enable-source-maps --experimental-specifier-resolution=node --env-file=.env --inspect dist",
-  "verbose": true
+	"watch": ["src"],
+	"ignore": ["src/**/*.test.ts"],
+	"ext": "ts,mjs,js,json,graphql",
+	"exec": "node --enable-source-maps --experimental-strip-types --env-file=.env --inspect src",
+	"verbose": true
 }

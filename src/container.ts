@@ -1,4 +1,4 @@
-import awilix, { Lifetime, ModuleDescriptor } from 'awilix';
+import * as awilix from 'awilix';
 import { camelCase, pascalCase } from 'change-case';
 
 /**
@@ -23,11 +23,11 @@ export type AppContainer = awilix.AwilixContainer<AppCradle>;
 export const initializeContainer = async () => {
 	await container.loadModules(
 		[
-			['**/providers/*.js', { lifetime: Lifetime.SINGLETON }],
+			['**/providers/*.js', { lifetime: awilix.Lifetime.SINGLETON }],
 			[
 				'**/providers/mongoose.js',
 				{
-					lifetime: Lifetime.SINGLETON,
+					lifetime: awilix.Lifetime.SINGLETON,
 					async dispose(mongoose: AppCradle['mongoose']) {
 						await mongoose.then((client) => client.disconnect());
 					},
@@ -48,7 +48,7 @@ export const initializeContainer = async () => {
 			 * @returns
 			 */
 			// eslint-disable-next-line @typescript-eslint/no-unused-vars
-			formatName(name: string, descriptor: ModuleDescriptor): string {
+			formatName(name: string, descriptor: awilix.ModuleDescriptor): string {
 				if (name.endsWith('.model')) {
 					return pascalCase(name);
 				}

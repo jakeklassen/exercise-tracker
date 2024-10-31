@@ -6,7 +6,7 @@ console.log(path.resolve(import.meta.url, '..'));
 
 await esbuild
 	.build({
-		target: 'node20',
+		target: 'node22',
 		platform: 'node',
 		format: 'esm',
 		write: true,

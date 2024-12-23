@@ -1,6 +1,6 @@
 services:
   mongo:
-    image: mongo:7.0.5
+    image: mongo:7.0.16
     # command: --smallfiles
     ports:
       - '59312:27017'

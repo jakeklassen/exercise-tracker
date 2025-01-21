@@ -36,7 +36,7 @@
 		"change-case": "^5.4.4",
 		"comment-json": "^4.2.5",
 		"convict": "^6.2.4",
-		"fastify": "^4.28.1",
+		"fastify": "^5.0.0",
 		"fp-ts": "^2.16.9",
 		"http-status-codes": "^2.3.0",
 		"io-ts": "^2.2.22",

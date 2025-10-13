@@ -26,7 +26,7 @@ export async function up({
 		);
 	});
 
-	session.endSession();
+	await session.endSession();
 }
 
 export async function down({
@@ -53,5 +53,5 @@ export async function down({
 		});
 	});
 
-	session.endSession();
+	await session.endSession();
 }
